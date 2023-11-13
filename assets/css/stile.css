@@ -12,7 +12,7 @@ button {
 
 #aside-left {
   background-color: #000000;
-  min-width: 30vh;
+  min-width: 20%;
   padding: 1em;
 }
 #aside-left div:first-child ul {
@@ -57,20 +57,31 @@ button {
 }
 
 #mid {
+  width: 80%;
   background-color: #121212;
 }
-
-#aside-right {
-  background-color: #000000;
-  max-width: 200px;
+#mid .mid-left {
+  width: 80%;
 }
-
-#media-player {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10vh;
-  background-color: #181818;
+#mid .mid-right {
+  height: 100%;
+  width: 20%;
+}
+#mid .mid-right #section-friends-right {
+  padding: 0.5em;
+  background-color: #000000;
+}
+#mid .mid-right .fa-user-plus,
+#mid .mid-right .fa-times {
+  color: rgba(255, 255, 255, 0.792);
+}
+#mid .mid-right h6 {
+  color: rgba(255, 255, 255, 0.792);
+  font-size: 0.9em;
+}
+#mid .mid-right p {
+  color: rgba(255, 255, 255, 0.792);
+  font-size: 0.8em;
 }
 
 header > div > div > div > .freccia-btn-home {
@@ -140,4 +151,12 @@ main section.album-main-top > button[type=button]#album-heart div button[type=bu
   width: 40px;
   margin: 0.5em;
   fill: white;
+}
+
+#media-player {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #181818;
 }/*# sourceMappingURL=stile.css.map */
