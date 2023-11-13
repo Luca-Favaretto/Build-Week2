@@ -1,3 +1,132 @@
-h1 {
-  color: red;
+body {
+  font-family: "Circular";
+  height: 100vh;
+}
+
+button {
+  border: none;
+}
+
+.dropdown-toggle::after {
+  border-color: transparent;
+}
+
+#aside-left {
+  background-color: #000000;
+  width: 25vw;
+  padding: 2em;
+}
+#aside-left div:first-child ul {
+  padding: 0;
+}
+#aside-left div:first-child ul li {
+  list-style: none;
+  color: white;
+  margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.792);
+  font-size: 1em;
+}
+#aside-left div:first-child ul li i {
+  width: 15px;
+  margin-right: 10px;
+}
+#aside-left div:first-child ul li img {
+  margin-right: 10px;
+}
+#aside-left hr {
+  color: rgba(255, 255, 255, 0.792);
+}
+#aside-left div:last-child {
+  height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+#aside-left div:last-child ul {
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.792);
+  font-size: 0.9em;
+}
+#aside-left div:last-child ul li {
+  margin-top: 0.5em;
+}
+
+#mid {
+  background-color: #121212;
+  width: 100%;
+}
+
+#aside-right {
+  background-color: #000000;
+  width: 15vw;
+}
+
+header > div > div > div > .freccia-btn-home {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: relative;
+}
+header > div > div > div > .freccia-btn-home > svg {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  inset: 0;
+  transform: translate(50%, 50%);
+}
+header div.album-home h1 {
+  font-size: 5em;
+}
+header div.album-home div {
+  display: flex;
+  align-items: end;
+}
+header div.album-home div img {
+  border-radius: 50%;
+}
+header div.album-home div ul {
+  padding-left: 3px;
+  margin-bottom: 0;
+}
+header div.album-home div ul li {
+  display: inline-block;
+}
+
+main section.album-main-top > button[type=button]#album-play {
+  background-color: #1ed760;
+  border-radius: 50%;
+}
+main section.album-main-top > button[type=button]#album-play svg {
+  height: 40px;
+  width: 40px;
+  margin: 0.8em;
+}
+main section.album-main-top > button[type=button]#album-heart {
+  background-color: transparent;
+}
+main section.album-main-top > button[type=button]#album-heart svg {
+  height: 40px;
+  width: 40px;
+  margin: 0.5em;
+  fill: rgb(61, 55, 55);
+}
+main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-tree-point {
+  border-radius: 50%;
+  background-color: transparent;
+}
+main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-tree-point svg {
+  height: 40px;
+  width: 40px;
+  margin: 0.5em;
+  fill: rgb(82, 81, 81);
+}
+main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-hamburger-menu {
+  border-radius: 50%;
+}
+main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-hamburger-menu svg {
+  height: 40px;
+  width: 40px;
+  margin: 0.5em;
+  fill: white;
 }/*# sourceMappingURL=stile.css.map */
