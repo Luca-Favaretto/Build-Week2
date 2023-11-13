@@ -11,3 +11,9 @@ svg {
       transform: translate(50%, 50%);
 }
 }
+button{
+    border:none;
+}
+.dropdown-toggle::after{
+    border-color: transparent;
+}
