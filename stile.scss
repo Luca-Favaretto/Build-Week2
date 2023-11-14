@@ -1,19 +1,19 @@
 .freccia-btn-home {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    position: relative;
-svg {
-      position: absolute;
-      height: 50%;
-      width: 50%;
-      inset: 0;
-      transform: translate(50%, 50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: relative;
+  svg {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    inset: 0;
+    transform: translate(50%, 50%);
+  }
 }
+button {
+  border: none;
 }
-button{
-    border:none;
-}
-.dropdown-toggle::after{
-    border-color: transparent;
+.dropdown-toggle::after {
+  border-color: transparent;
 }
