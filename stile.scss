@@ -6,6 +6,9 @@ body {
 button {
   border: none;
 }
+.main-content {
+  height: calc(100vh - 120px);
+}
 
 .freccia-btn-home {
   width: 36px;
@@ -80,6 +83,7 @@ button {
   background-color: #121212;
   .mid-left {
     width: 80%;
+    overflow-y: auto;
   }
   .mid-right {
     height: 100%;
@@ -193,10 +197,8 @@ main {
 }
 
 #media-player {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10vh;
+  position: relative;
+  height: 120px;
   background-color: #181818;
   #range-player {
     width: 80%;
@@ -244,7 +246,6 @@ li {
     cursor: pointer;
   }
   input[type="range"] {
-    width: 80%;
     height: 0.6rem;
     &::-webkit-slider-thumb {
       -webkit-appearance: none;

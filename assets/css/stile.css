@@ -6,6 +6,10 @@ button {
   border: none;
 }
 
+.main-content {
+  height: calc(100vh - 120px);
+}
+
 .freccia-btn-home {
   width: 36px;
   height: 36px;
@@ -79,6 +83,7 @@ button {
 }
 #mid .mid-left {
   width: 80%;
+  overflow-y: auto;
 }
 #mid .mid-right {
   height: 100%;
@@ -171,10 +176,8 @@ main section.album-main-top > button[type=button]#album-heart div button[type=bu
 }
 
 #media-player {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10vh;
+  position: relative;
+  height: 120px;
   background-color: #181818;
 }
 #media-player #range-player {
@@ -209,7 +212,6 @@ li:hover {
   cursor: pointer;
 }
 li input[type=range] {
-  width: 80%;
   height: 0.6rem;
 }
 li input[type=range]::-webkit-slider-thumb {
