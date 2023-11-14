@@ -75,9 +75,7 @@ button {
 }
 
 #mid {
-  height: 100vh;
   overflow: hidden;
-  overflow-y: auto;
   width: 80%;
   background-color: #121212;
 }
@@ -181,7 +179,6 @@ main section.album-main-top > button[type=button]#album-heart div button[type=bu
   background-color: #181818;
 }
 #media-player #range-player {
-  width: 80%;
   height: 0.6rem;
 }
 #media-player #range-player::-webkit-slider-thumb {

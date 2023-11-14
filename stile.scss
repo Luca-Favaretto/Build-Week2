@@ -76,9 +76,7 @@ button {
   }
 }
 #mid {
-  height: 100vh;
   overflow: hidden;
-  overflow-y: auto;
   width: 80%;
   background-color: #121212;
   .mid-left {
@@ -201,7 +199,6 @@ main {
   height: 120px;
   background-color: #181818;
   #range-player {
-    width: 80%;
     height: 0.6rem;
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
