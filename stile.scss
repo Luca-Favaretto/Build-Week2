@@ -8,12 +8,14 @@ button {
 .dropdown-toggle:not(.no-trasparent)::after {
   border-color: transparent;
 }
-
+///////
+///
 #aside-left {
   background-color: #000000;
   min-width: 20%;
   padding: 1em;
   div:first-child {
+    height: 20vh;
     ul {
       padding: 0;
       li {
@@ -35,6 +37,7 @@ button {
   }
   hr {
     color: rgba(255, 255, 255, 0.792);
+    margin: 0;
   }
   div:last-child {
     height: 70vh;
@@ -62,6 +65,7 @@ button {
   .mid-left {
     width: 80%;
   }
+
   .mid-right {
     height: 100%;
     width: 20%;
@@ -177,10 +181,10 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 10vh;
+  height: 100px;
   background-color: #181818;
   #range-player {
-    width: 80%;
+    width: 70%;
     height: 0.6rem;
     &::-webkit-slider-thumb {
       -webkit-appearance: none;

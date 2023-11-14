@@ -15,6 +15,9 @@ button {
   min-width: 20%;
   padding: 1em;
 }
+#aside-left div:first-child {
+  height: 20vh;
+}
 #aside-left div:first-child ul {
   padding: 0;
 }
@@ -34,6 +37,7 @@ button {
 }
 #aside-left hr {
   color: rgba(255, 255, 255, 0.792);
+  margin: 0;
 }
 #aside-left div:last-child {
   height: 70vh;
@@ -157,11 +161,11 @@ main section.album-main-top > button[type=button]#album-heart div button[type=bu
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 10vh;
+  height: 100px;
   background-color: #181818;
 }
 #media-player #range-player {
-  width: 80%;
+  width: 70%;
   height: 0.6rem;
 }
 #media-player #range-player::-webkit-slider-thumb {

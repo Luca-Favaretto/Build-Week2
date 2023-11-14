@@ -214,10 +214,10 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Dropdown button
+                      Marietto
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Contatti</a></li>
                       <li>
                         <a class="dropdown-item" href="#">Another action</a>
                       </li>
@@ -362,9 +362,9 @@
     </div>
     <section
       id="media-player"
-      class="row justify-content-between align-items-center p-3"
+      class="d-flex justify-content-between align-items-center p-3"
     >
-      <div class="col-auto">
+      <div>
         <div class="d-flex align-items-center">
           <img src="./assets/imgs/main/image-11.jpg" width="70px" alt="" />
           <div class="ms-2">
@@ -373,10 +373,10 @@
           </div>
         </div>
       </div>
-      <div class="col-5">
+      <div class="d-none d-lg-block">
         <div class="row flex-column">
           <div class="col-12">
-            <ul class="text-center">
+            <ul class="text-center p-0">
               <li class="d-inline-block">
                 <i class="fas fa-random"></i>
               </li>
@@ -404,7 +404,7 @@
           </div>
         </div>
       </div>
-      <div class="col-auto">
+      <div class="d-none d-md-block">
         <ul class="m-0">
           <li class="d-inline-block"><i class="fas fa-microphone-alt"></i></li>
           <li class="d-inline-block"><i class="fas fa-bars"></i></li>
@@ -414,6 +414,12 @@
             ><input type="range" class="form-range" id="volume" />
           </li>
           <li class="d-inline-block"><i class="fas fa-expand-alt"></i></li>
+        </ul>
+      </div>
+      <div class="d-block d-md-none">
+        <ul>
+          <li class="d-inline-block"><i class="fas fa-heart"></i></li>
+          <li class="d-inline-block"><i class="fas fa-play"></i></li>
         </ul>
       </div>
     </section>
