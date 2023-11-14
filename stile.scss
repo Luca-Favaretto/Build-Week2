@@ -73,6 +73,9 @@ button {
   }
 }
 #mid {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
   width: 80%;
   background-color: #121212;
   .mid-left {
