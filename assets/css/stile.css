@@ -77,6 +77,7 @@ button {
 #mid {
   overflow: hidden;
   width: 80%;
+  flex-grow: 1;
   background-color: #121212;
 }
 #mid .mid-left {
