@@ -23,7 +23,7 @@
   </head>
   <body>
     <div class="main-content d-flex">
-      <section id="aside-left">
+      <section id="aside-left" class="d-none d-lg-block">
         <div>
           <ul>
             <li>
@@ -234,282 +234,102 @@
                   </div>
                 </div>
               </div>
-              <header class="row container bg-dark mt-3 position-relative">
-                <div class="col-3">
+            </div>
+
+            <header class="bg-secondary">
+              <div class="row mt-3">
+                <div class="col-3 p-3">
                   <img
-                    class="m-3"
                     src="./assets/imgs/main/image-1.jpg"
+                    class="img-fluid"
                     alt=""
-                    width="100%"
+                    srcset=""
                   />
                 </div>
-                <div class="text-light col-9">
-                  <h6 class="position-absolute mt-1">Album</h6>
-                  <h1 class="mt-5">VIOLA (frat. Salmo)</h1>
-                  <h6 id="testo" class="mt-4">Fedez, Salmo</h6>
-                  <h6 class="mt-3 mb-4">
-                    Ascolta il nuovo singolo di Fedez e Salmo
-                  </h6>
-                  <button type="submit" class="rounded-pill bg-success">
-                    <span class="p-3 fs-4">Play</span>
-                  </button>
-                  <button type="submit" class="rounded-pill bg-dark">
-                    <span class="p-3 text-light fs-4">Salva</span>
-                  </button>
-                  <!-- <button type="submit" class="rounded-pill bg-dark"><span class="p-3 text-light fs-4">.</span></button> -->
-                  <div class="dropdown me-auto d-inline">
-                    <button
-                      class="btn btn-dark dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <svg
-                        data-encore-id="icon"
-                        role="img"
-                        aria-hidden="true"
-                        viewBox="0 0 24 24"
-                        class="Svg-sc-ytk21e-0 iaCPPY"
-                        style="fill: #ffffff"
-                      >
-                        <path
-                          d="M4.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm15 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-7.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-                        ></path>
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <button
-                  type="submit"
-                  id="nascondiAnnuncio"
-                  class="col-2 position-absolute end-0 rounded-pill bg-dark text-light mt-2 mx-4"
-                >
-                  nascondi annuncio
-                </button>
-                <!-- <button
-          type="submit"
-          id="nascondiAnnuncio"
-          class="position-absolute top-0 end-0 rounded-pill bg-dark text-light mt-2 mx-4"
-          >nascondi annuncio
-        </button> -->
-              </header>
-            </div>
-            <!-- secondo blocco -->
-            <h2 class="mt-3 text-light">Buonasera</h2>
-            <div class="row">
-              <div class="col-sm-6 col-lg-4">
-                <div class="card mb-3 bg-dark border border-0">
-                  <div class="row g-0">
-                    <div class="col-4">
+                <div class="col-9 album-home">
+                  <div class="d-flex flex-column justify-content-end">
+                    <h4>Artist</h4>
+                    <div class="mt-5">
                       <img
                         src="./assets/imgs/main/image-1.jpg"
-                        class="img-fluid rounded-start"
-                        alt="immagine della canzone"
+                        alt=""
+                        width="30px rounded"
                       />
-                    </div>
-                    <div class="col-md-8">
-                      <div id="testo" class="card-body p-0 px-2 pt-2">
-                        <h6 class="card-text fs-6">
-                          early stage emily syndrome <br />
-                          (srtt-ott 2022)
-                        </h6>
-                      </div>
+                      <ul class="fs-4">
+                        <li>nome artista</li>
+                        <li>&#8226; anno</li>
+                        <li>&#8226; numero brani, <span>minuti</span></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/imgs/main/image-1.jpg"
-                        class="img-fluid rounded-start"
-                        alt="immagine della canzone"
-                      />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <p class="card-text fs-6">Be The Young</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/imgs/main/image-1.jpg"
-                        class="img-fluid rounded-start"
-                        alt="immagine della canzone"
-                      />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <p class="card-text fs-6">saggio vibes icon123prova</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/imgs/main/image-1.jpg"
-                        class="img-fluid rounded-start"
-                        alt="immagine della canzone"
-                      />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <p class="card-text fs-6">Brani che ti piacciono</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/imgs/main/image-1.jpg"
-                        class="img-fluid rounded-start"
-                        alt="immagine della canzone"
-                      />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <p class="card-text fs-6">2021 lol</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-4">
-                      <img
-                        src="./assets/imgs/main/image-1.jpg"
-                        class="img-fluid rounded-start"
-                        alt="immagine della canzone"
-                      />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <p class="card-text fs-6">Deep Drive with Ali Abdaal</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- terzo blocco -->
-            <div class="position-relative">
-              <h2 class="text-light mt-2">Altro di ciò che ti piace</h2>
-              <button
-                class="bg-black text-white-50 position-absolute top-0 mt-3 end-0"
+            </header>
+            <main class="p-3">
+              <section
+                class="d-flex mt-4 album-main-top align-items-center gap-5"
               >
-                VISUALIZZA TUTTO
-              </button>
-            </div>
-
-            <div class="row justify-content-between mt-4">
-              <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-4">
-                <div class="card p-2 bg-dark">
-                  <img
-                    src="./assets/imgs/main/image-1.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Hot Hits Italia</h5>
-                    <p class="card-text">
-                      La playlist più calda del <br />
-                      mondo
-                    </p>
-                  </div>
+                <button type="button" id="album-play">
+                  <svg
+                    data-encore-id="icon"
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    class="Svg-sc-ytk21e-0 iYxpxA"
+                  >
+                    <path
+                      d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                    ></path>
+                  </svg>
+                </button>
+                <button type="button" id="album-heart">
+                  <svg
+                    data-encore-id="icon"
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    class="Svg-sc-ytk21e-0 iaCPPY"
+                  >
+                    <path
+                      d="M5.21 1.57a6.757 6.757 0 0 1 6.708 1.545.124.124 0 0 0 .165 0 6.741 6.741 0 0 1 5.715-1.78l.004.001a6.802 6.802 0 0 1 5.571 5.376v.003a6.689 6.689 0 0 1-1.49 5.655l-7.954 9.48a2.518 2.518 0 0 1-3.857 0L2.12 12.37A6.683 6.683 0 0 1 .627 6.714 6.757 6.757 0 0 1 5.21 1.57zm3.12 1.803a4.757 4.757 0 0 0-5.74 3.725l-.001.002a4.684 4.684 0 0 0 1.049 3.969l.009.01 7.958 9.485a.518.518 0 0 0 .79 0l7.968-9.495a4.688 4.688 0 0 0 1.049-3.965 4.803 4.803 0 0 0-3.931-3.794 4.74 4.74 0 0 0-4.023 1.256l-.008.008a2.123 2.123 0 0 1-2.9 0l-.007-.007a4.757 4.757 0 0 0-2.214-1.194z"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="dropdown me-auto">
+                  <button
+                    class="btn btn-dark dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="album-tree-point"
+                  >
+                    <svg
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      class="Svg-sc-ytk21e-0 iaCPPY"
+                    >
+                      <path
+                        d="M4.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm15 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-7.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                      ></path>
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-
-              <div class="card col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-4">
-                <img
-                  src="./assets/imgs/main/image-1.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">big on the internet</h5>
-                  <p class="card-text">iykyk</p>
-                </div>
-              </div>
-
-              <div class="card col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-4">
-                <img
-                  src="./assets/imgs/main/image-1.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Pop Rising</h5>
-                  <p class="card-text">
-                    the hits of tomorrow are on <br />
-                    music
-                  </p>
-                </div>
-              </div>
-
-              <div class="card col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-4">
-                <img
-                  src="./assets/imgs/main/image-1.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Canzoni Tristi</h5>
-                  <p class="card-text">It's ok not be ok :')</p>
-                </div>
-              </div>
-
-              <div class="card col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-4">
-                <img
-                  src="./assets/imgs/main/image-1.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">in Tendenzaa</h5>
-                  <p class="card-text">Viral & Trending: le canzoni</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- ---------------------------------------------------- -->
-            <!-- quarto blocco -->
+              </section>
+            </main>
           </div>
         </div>
+
         <div class="mid-right p-0">
           <section id="section-friends-right" class="text-white w-100">
             <div class="row flex-column">

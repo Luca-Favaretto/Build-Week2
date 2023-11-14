@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="./assets/css/font.css" />
 
     <link rel="stylesheet" href="./assets/css/stile.css" />
-    <title>Document</title>
+    <title>Artist page</title>
   </head>
   <body>
-    <div class="d-flex">
-      <section id="aside-left">
+    <div class="main-content d-flex">
+      <section id="aside-left" class="d-none d-lg-block">
         <div>
           <ul>
             <li>
@@ -173,48 +173,109 @@
           </ul>
         </div>
       </section>
-      <section id="mid" class="row">
+      <section id="mid" class="d-flex">
         <div class="mid-left p-0">
-          <header class="bg-secondary">
-            <div class="p-3">
-              <div class="d-flex justify-content-between">
-                <div class="d-flex gap-3">
-                  <button type="button" class="freccia-btn-home">
-                    <svg
-                      data-encore-id="icon"
-                      role="img"
-                      aria-hidden="true"
-                      class="Svg-sc-ytk21e-0 kgVuXA IYDlXmBmmUKHveMzIPCF"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                  <button type="button" class="freccia-btn-home">
-                    <svg
-                      data-encore-id="icon"
-                      role="img"
-                      aria-hidden="true"
-                      class="Svg-sc-ytk21e-0 kgVuXA IYDlXmBmmUKHveMzIPCF"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
-                      ></path>
-                    </svg>
-                  </button>
+          <!-- Home-page parte centrale -->
+
+          <div class="container">
+            <div class="d-none d-md-block">
+              <div class="p-3">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex gap-3">
+                    <button type="button" class="freccia-btn-home">
+                      <svg
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 kgVuXA IYDlXmBmmUKHveMzIPCF"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button type="button" class="freccia-btn-home">
+                      <svg
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 kgVuXA IYDlXmBmmUKHveMzIPCF"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div>
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-dark dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown button
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <div class="dropdown">
+              </div>
+              <header class="row container bg-dark mt-3 position-relative">
+                <div class="col-3">
+                  <img
+                    class="m-3"
+                    src="./assets/imgs/main/image-1.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="text-light col-9">
+                  <h6 class="position-absolute mt-1">Album</h6>
+                  <h1 class="mt-5">VIOLA (frat. Salmo)</h1>
+                  <h6 id="testo" class="mt-4">Fedez, Salmo</h6>
+                  <h6 class="mt-3 mb-4">
+                    Ascolta il nuovo singolo di Fedez e Salmo
+                  </h6>
+                  <button type="submit" class="rounded-pill bg-success">
+                    <span class="p-3 fs-4">Play</span>
+                  </button>
+                  <button type="submit" class="rounded-pill bg-dark">
+                    <span class="p-3 text-light fs-4">Salva</span>
+                  </button>
+                  <!-- <button type="submit" class="rounded-pill bg-dark"><span class="p-3 text-light fs-4">.</span></button> -->
+                  <div class="dropdown me-auto d-inline">
                     <button
-                      class="btn btn-dark dropdown-toggle no-trasparent"
+                      class="btn btn-dark dropdown-toggle"
                       type="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Dropdown button
+                      <svg
+                        data-encore-id="icon"
+                        role="img"
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        class="Svg-sc-ytk21e-0 iaCPPY"
+                        style="fill: #ffffff"
+                      >
+                        <path
+                          d="M4.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm15 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-7.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        ></path>
+                      </svg>
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -229,92 +290,22 @@
                     </ul>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="row mt-3 p-3">
-              <div class="col-3">
-                <img src="./assets/imgs/main/image-1.jpg" alt="" srcset="" />
-              </div>
-              <div class="col-9 album-home">
-                <div class="d-flex flex-column justify-content-end">
-                  <h4>ALBUM</h4>
-                  <h1>Titolo album</h1>
-                  <div class="mt-5">
-                    <img
-                      src="./assets/imgs/main/image-1.jpg"
-                      alt=""
-                      width="30px rounded"
-                    />
-                    <ul class="fs-4">
-                      <li>nome artista</li>
-                      <li>&#8226; anno</li>
-                      <li>&#8226; numero brani, <span>minuti</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </header>
-          <main class="p-3">
-            <section
-              class="d-flex mt-4 album-main-top align-items-center gap-5"
-            >
-              <button type="button" id="album-play">
-                <svg
-                  data-encore-id="icon"
-                  role="img"
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  class="Svg-sc-ytk21e-0 iYxpxA"
-                >
-                  <path
-                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
-                  ></path>
-                </svg>
-              </button>
-              <button type="button" id="album-heart">
-                <svg
-                  data-encore-id="icon"
-                  role="img"
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  class="Svg-sc-ytk21e-0 iaCPPY"
-                >
-                  <path
-                    d="M5.21 1.57a6.757 6.757 0 0 1 6.708 1.545.124.124 0 0 0 .165 0 6.741 6.741 0 0 1 5.715-1.78l.004.001a6.802 6.802 0 0 1 5.571 5.376v.003a6.689 6.689 0 0 1-1.49 5.655l-7.954 9.48a2.518 2.518 0 0 1-3.857 0L2.12 12.37A6.683 6.683 0 0 1 .627 6.714 6.757 6.757 0 0 1 5.21 1.57zm3.12 1.803a4.757 4.757 0 0 0-5.74 3.725l-.001.002a4.684 4.684 0 0 0 1.049 3.969l.009.01 7.958 9.485a.518.518 0 0 0 .79 0l7.968-9.495a4.688 4.688 0 0 0 1.049-3.965 4.803 4.803 0 0 0-3.931-3.794 4.74 4.74 0 0 0-4.023 1.256l-.008.008a2.123 2.123 0 0 1-2.9 0l-.007-.007a4.757 4.757 0 0 0-2.214-1.194z"
-                  ></path>
-                </svg>
-              </button>
-              <div class="dropdown me-auto">
                 <button
-                  class="btn btn-dark dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  id="album-tree-point"
+                  type="submit"
+                  id="nascondiAnnuncio"
+                  class="col-2 position-absolute end-0 rounded-pill bg-dark text-light mt-2 mx-4"
                 >
-                  <svg
-                    data-encore-id="icon"
-                    role="img"
-                    aria-hidden="true"
-                    viewBox="0 0 24 24"
-                    class="Svg-sc-ytk21e-0 iaCPPY"
-                  >
-                    <path
-                      d="M4.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm15 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-7.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-                    ></path>
-                  </svg>
+                  nascondi annuncio
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </main>
+                <!-- <button
+          type="submit"
+          id="nascondiAnnuncio"
+          class="position-absolute top-0 end-0 rounded-pill bg-dark text-light mt-2 mx-4"
+          >nascondi annuncio
+        </button> -->
+              </header>
+            </div>
+          </div>
         </div>
         <div class="mid-right p-0">
           <section id="section-friends-right" class="text-white w-100">
@@ -360,64 +351,68 @@
         </div>
       </section>
     </div>
-    <section
-      id="media-player"
-      class="row justify-content-between align-items-center p-3"
-    >
-      <div class="col-auto">
-        <div class="d-flex align-items-center">
-          <img src="./assets/imgs/main/image-11.jpg" width="70px" alt="" />
-          <div class="ms-2">
-            <h3>titolo canzone</h3>
-            <p>autore</p>
+    <section id="media-player" class="p-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-auto">
+            <div class="d-flex align-items-center">
+              <img src="./assets/imgs/main/image-11.jpg" width="70px" alt="" />
+              <div class="ms-2">
+                <h3>titolo canzone</h3>
+                <p>autore</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-5">
-        <div class="row flex-column">
-          <div class="col-12">
-            <ul class="text-center">
+          <div class="col">
+            <div class="row flex-column align-items-center">
+              <div class="col-12">
+                <ul class="text-center p-0">
+                  <li class="d-inline-block">
+                    <i class="fas fa-random"></i>
+                  </li>
+                  <li class="d-inline-block">
+                    <i class="fas fa-step-backward"></i>
+                  </li>
+                  <li class="d-inline-block">
+                    <i class="fas fa-play"></i>
+                  </li>
+                  <li class="d-inline-block">
+                    <i class="fas fa-step-forward"></i>
+                  </li>
+                  <li class="d-inline-block">
+                    <i class="fas fa-retweet"></i>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-12 col-md-8 col-lg-6 d-flex align-items-center gap-1"
+              >
+                <label class="text-white" for="range-player">10.10</label>
+                <input type="range" class="form-range" id="range-player" />
+                <label class="text-white" for="range-player">00:0l</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <ul class="m-0">
               <li class="d-inline-block">
-                <i class="fas fa-random"></i>
+                <i class="fas fa-microphone-alt"></i>
               </li>
-              <li class="d-inline-block">
-                <i class="fas fa-step-backward"></i>
+              <li class="d-inline-block"><i class="fas fa-bars"></i></li>
+              <li class="d-inline-block"><i class="fas fa-podcast"></i></li>
+              <li class="d-inline-flex align-items-center">
+                <label for="volume">
+                  <i class="fas fa-volume-down me-2"></i>
+                </label>
+                <input type="range" class="form-range" id="volume" />
               </li>
-              <li class="d-inline-block">
-                <i class="fas fa-play"></i>
-              </li>
-              <li class="d-inline-block">
-                <i class="fas fa-step-forward"></i>
-              </li>
-              <li class="d-inline-block">
-                <i class="fas fa-retweet"></i>
-              </li>
+              <li class="d-inline-block"><i class="fas fa-expand-alt"></i></li>
             </ul>
           </div>
-          <div class="col-12">
-            <audio class="text-white" src="">
-              <i class="fas fa-retweet"></i>
-            </audio>
-            <label class="text-white" for="range-player">10.10</label>
-            <input type="range" class="form-range" id="range-player" />
-            <label class="text-white" for="range-player">00:0l</label>
-          </div>
         </div>
       </div>
-      <div class="col-auto">
-        <ul class="m-0">
-          <li class="d-inline-block"><i class="fas fa-microphone-alt"></i></li>
-          <li class="d-inline-block"><i class="fas fa-bars"></i></li>
-          <li class="d-inline-block"><i class="fas fa-podcast"></i></li>
-          <li class="d-inline-block">
-            <label for="volume"><i class="fas fa-volume-down me-2"></i></label
-            ><input type="range" class="form-range" id="volume" />
-          </li>
-          <li class="d-inline-block"><i class="fas fa-expand-alt"></i></li>
-        </ul>
-      </div>
     </section>
-
+    <audio class="text-white" src=""></audio>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
