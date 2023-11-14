@@ -25,3 +25,13 @@ const arrayMusic = () => {
 };
 
 arrayMusic();
+
+const xAsideLeft = document.getElementById("x-aside-left");
+console.log(xAsideLeft);
+
+const contatti = document.getElementById("contatti");
+console.log(contatti);
+const midRight = document.getElementsByClassName("mid-right")[0];
+console.log(midRight);
+xAsideLeft.onclick = () => midRight.classList.add("d-none");
+contatti.onclick = () => midRight.classList.remove("d-none");
