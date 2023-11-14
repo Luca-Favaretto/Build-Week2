@@ -5,7 +5,7 @@ body {
 button {
   border: none;
 }
-.dropdown-toggle::after {
+.dropdown-toggle:not(.no-trasparent)::after {
   border-color: transparent;
 }
 
@@ -65,9 +65,9 @@ button {
   .mid-right {
     height: 100%;
     width: 20%;
+    background-color: #000000;
     #section-friends-right {
       padding: 0.5em;
-      background-color: #000000;
     }
     .fa-user-plus,
     .fa-times {
@@ -179,4 +179,83 @@ main {
   width: 100%;
   height: 10vh;
   background-color: #181818;
+  #range-player {
+    width: 80%;
+    height: 0.6rem;
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #4caf50;
+      cursor: pointer;
+    }
+    &::-webkit-slider-runnable-track {
+      background: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff calc(100% - 50px),
+        #494848 calc(100% - 50px),
+        #494848 100%
+      );
+
+      height: 6px;
+      border-radius: 5px;
+    }
+    &:hover::-webkit-slider-runnable-track {
+      background: linear-gradient(
+        to right,
+        #4caf50 0%,
+        #4caf50 calc(100% - 50px),
+        #494848 calc(100% - 50px),
+        #494848 100%
+      );
+    }
+  }
+}
+
+li {
+  color: rgba(255, 255, 255, 0.437);
+  margin-inline: 0.5em;
+  font-weight: 100;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+  input[type="range"] {
+    width: 80%;
+    height: 0.6rem;
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #4caf50;
+      cursor: pointer;
+    }
+    &::-webkit-slider-runnable-track {
+      background: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff calc(100% - 50px),
+        #494848 calc(100% - 50px),
+        #494848 100%
+      );
+
+      height: 6px;
+      border-radius: 5px;
+    }
+    &:hover::-webkit-slider-runnable-track {
+      background: linear-gradient(
+        to right,
+        #4caf50 0%,
+        #4caf50 calc(100% - 50px),
+        #494848 calc(100% - 50px),
+        #494848 100%
+      );
+    }
+  }
 }
