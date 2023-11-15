@@ -221,39 +221,22 @@ header div.album-home div div ul li {
 main section.album-main-top > button[type=button]#album-play {
   background-color: #1ed760;
   border-radius: 50%;
+  height: 5s0px;
+  width: 50px;
+  height: 50px;
 }
-main section.album-main-top > button[type=button]#album-play svg {
-  height: 40px;
-  width: 40px;
-  margin: 0.8em;
+main section.album-main-top > button[type=button]#album-play i {
+  transform: translate(3px, 3px);
 }
 main section.album-main-top > button[type=button]#album-heart {
   background-color: transparent;
-}
-main section.album-main-top > button[type=button]#album-heart svg {
-  height: 40px;
-  width: 40px;
-  margin: 0.5em;
-  fill: rgb(61, 55, 55);
 }
 main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-tree-point {
   border-radius: 50%;
   background-color: transparent;
 }
-main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-tree-point svg {
-  height: 40px;
-  width: 40px;
-  margin: 0.5em;
-  fill: rgb(82, 81, 81);
-}
 main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-hamburger-menu {
   border-radius: 50%;
-}
-main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-hamburger-menu svg {
-  height: 40px;
-  width: 40px;
-  margin: 0.5em;
-  fill: white;
 }
 
 #media-player {
