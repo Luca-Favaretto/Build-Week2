@@ -290,50 +290,47 @@ li {
   background-position: center;
 }
 
-#immagineProfilo{
+#immagineProfilo {
   margin-left: -17px;
   margin-top: -9px;
   margin-bottom: -6px;
-  background-color: #0A0A0A;
+  background-color: #0a0a0a;
 }
 
-#profileButton{
-  background-color: #0A0A0A;
+#profileButton {
+  background-color: #0a0a0a;
   color: white;
 }
 
-#bloccoAnnuncio{
+#bloccoAnnuncio {
   margin-left: -10px;
 }
 
-#heightAnnuncio{
+#heightAnnuncio {
   margin-top: -17px;
 }
 
-#borderNone{
+#borderNone {
   background: transparent;
-    border: none;
+  border: none;
 }
-#backgroundNone{
+#backgroundNone {
   background: transparent;
   border: none;
   margin-bottom: 15px;
   font-size: 2rem;
 }
-
-#buttonSalva{
-  background: transparent;
+.play-btn-home {
+  background-color: $green-spoty;
+  padding: 1em 3em;
+  margin-right: 2em;
 }
-
-// #testoAnnuncio{
-//   color: red;
-// }
-
-
-
-// @media  screen and (min-width: 200px) and (max-width: 1510px) {
-//   #testoAnnuncio{
-//     font-size: 6rem;
-//     background-color: red;
-//   }
-// }
+#btn-save {
+  background: transparent;
+  border: 1px solid white;
+  margin-right: 2em;
+  padding: 1em 3em;
+}
+.ellipsis {
+  font-size: 3em;
+}
