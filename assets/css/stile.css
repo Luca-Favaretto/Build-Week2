@@ -2,11 +2,15 @@
   color: rgba(255, 255, 255, 0.767);
 }
 
-.gray-spoty {
-  background-color: #121212;
+.gray-spoty-bg {
+  background-color: #2c2c2c;
 }
 
-.black-spoty {
+.black-spoty-bg {
+  background-color: #181818;
+}
+
+.black-spoty-text {
   background-color: #181818;
 }
 
@@ -23,7 +27,7 @@ body {
 }
 
 ul.dropdown-menu {
-  background-color: #121212;
+  background-color: #2c2c2c;
 }
 ul.dropdown-menu li a {
   color: white;
@@ -158,7 +162,11 @@ button {
   left: 0;
   right: 0;
   height: 300px;
-  background: linear-gradient(to bottom, rgba(255, 193, 7, 0.7450980392), transparent);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 193, 7, 0.7450980392),
+    transparent
+  );
 }
 #mid .mid-right {
   height: 100%;
@@ -218,24 +226,32 @@ header div.album-home div div ul li {
   display: inline-block;
 }
 
-main section.album-main-top > button[type=button]#album-play {
+main section.album-main-top > button[type="button"]#album-play {
   background-color: #1ed760;
   border-radius: 50%;
   height: 5s0px;
   width: 50px;
   height: 50px;
 }
-main section.album-main-top > button[type=button]#album-play i {
+main section.album-main-top > button[type="button"]#album-play i {
   transform: translate(3px, 3px);
 }
-main section.album-main-top > button[type=button]#album-heart {
+main section.album-main-top > button[type="button"]#album-heart {
   background-color: transparent;
 }
-main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-tree-point {
+main
+  section.album-main-top
+  > button[type="button"]#album-heart
+  div
+  button[type="button"]#album-tree-point {
   border-radius: 50%;
   background-color: transparent;
 }
-main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-hamburger-menu {
+main
+  section.album-main-top
+  > button[type="button"]#album-heart
+  div
+  button[type="button"]#album-hamburger-menu {
   border-radius: 50%;
 }
 
@@ -271,6 +287,52 @@ li:hover {
   background-size: cover;
   background-position: center;
 }
-.header-artist h1 {
-  font-size: 4em;
-}/*# sourceMappingURL=stile.css.map */
+
+#immagineProfilo {
+  margin-left: -17px;
+  margin-top: -9px;
+  margin-bottom: -6px;
+  background-color: #0a0a0a;
+}
+
+#profileButton {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+#bloccoAnnuncio {
+  margin-left: -10px;
+}
+
+#heightAnnuncio {
+  margin-top: -17px;
+}
+
+#borderNone {
+  background: transparent;
+  border: none;
+}
+
+#backgroundNone {
+  background: transparent;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.play-btn-home {
+  background-color: #1ed760;
+  padding: 1em 3em;
+  margin-right: 2em;
+}
+
+#btn-save {
+  background: transparent;
+  border: 1px solid white;
+  margin-right: 2em;
+  padding: 1em 3em;
+}
+
+.ellipsis {
+  font-size: 3em;
+} /*# sourceMappingURL=stile.css.map */

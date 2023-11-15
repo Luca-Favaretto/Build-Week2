@@ -191,8 +191,6 @@ header {
   }
   div.album-home {
     div {
-      h4 {
-      }
       h1 {
         font-size: 5em;
       }
@@ -276,4 +274,49 @@ li {
   h1 {
     font-size: 4em;
   }
+}
+
+#immagineProfilo {
+  margin-left: -17px;
+  margin-top: -9px;
+  margin-bottom: -6px;
+  background-color: #0a0a0a;
+}
+
+#profileButton {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+#bloccoAnnuncio {
+  margin-left: -10px;
+}
+
+#heightAnnuncio {
+  margin-top: -17px;
+}
+
+#borderNone {
+  background: transparent;
+  border: none;
+}
+#backgroundNone {
+  background: transparent;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.play-btn-home {
+  background-color: $green-spoty;
+  padding: 1em 3em;
+  margin-right: 2em;
+}
+#btn-save {
+  background: transparent;
+  border: 1px solid white;
+  margin-right: 2em;
+  padding: 1em 3em;
+}
+.ellipsis {
+  font-size: 3em;
 }
