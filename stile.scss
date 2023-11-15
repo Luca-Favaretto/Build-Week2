@@ -50,6 +50,21 @@ button {
     fill: white;
   }
 }
+.freccia-btn-home {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #131313;
+  svg {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    inset: 0;
+    transform: translate(50%, 50%);
+    fill: white;
+  }
+}
 
 #aside-left {
   background-color: #000000;
