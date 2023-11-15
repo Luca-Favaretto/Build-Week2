@@ -41,7 +41,7 @@ console.log(audio);
 console.log(audio.duration);
 console.log(audio.currentTime);
 const playBtns = Array.from(document.getElementsByClassName("play-btn"));
-console.log(playBtns);
+console.log(playBtns[0].innerHTML);
 const currentTime = document.getElementById("current-time-music");
 console.log(currentTime);
 const durationTime = document.getElementById("duration-time-music");
@@ -57,7 +57,7 @@ console.log(volume);
 
 const playAudio = btn => {
   audio.play();
-  playBtns.forEach(btn => (btn.innerHTML = ' <i class="fas fa-pause"></i'));
+  playBtns.forEach(btn => (btn.innerHTML = '<i class="fas fa-pause"></i'));
 };
 
 const stopAudio = btn => {

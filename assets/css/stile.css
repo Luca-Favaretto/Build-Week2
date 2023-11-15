@@ -223,6 +223,7 @@ header div.album-home div div ul li {
 }
 
 main section.album-main-top > button[type=button]#album-play {
+  position: relative;
   background-color: #1ed760;
   border-radius: 50%;
   height: 5s0px;
@@ -230,7 +231,10 @@ main section.album-main-top > button[type=button]#album-play {
   height: 50px;
 }
 main section.album-main-top > button[type=button]#album-play i {
-  transform: translate(3px, 3px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 main section.album-main-top > button[type=button]#album-heart {
   background-color: transparent;
