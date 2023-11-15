@@ -317,13 +317,43 @@ li:hover {
   margin-right: 2em;
 }
 
+.ellipsis {
+  font-size: 3em;
+}
+
 #btn-save {
   background: transparent;
   border: 1px solid white;
-  margin-right: 2em;
-  padding: 1em 3em;
+  margin-right: 1rem;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin: 0;
 }
 
-.ellipsis {
-  font-size: 3em;
-}/*# sourceMappingURL=stile.css.map */
+#btn-salva {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: 12px;
+}
+
+#marginTesto {
+  margin-top: 1.4rem !important;
+}
+
+#testoAnnuncio {
+  margin-top: 37px !important;
+}
+
+#ilNuovoSingolo {
+  margin-top: -1px !important;
+  margin-bottom: 12px !important;
+}
+
+#immagineAnnuncio {
+  width: 14rem;
+  margin-bottom: -20px !important;
+}
