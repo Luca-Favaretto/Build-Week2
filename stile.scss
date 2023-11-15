@@ -132,6 +132,15 @@ button {
       background-color: $withe-trasparent;
     }
     flex-grow: 1;
+    .ombra {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 300px;
+      background: linear-gradient(to bottom, #ffc107be, transparent);
+    }
   }
   .mid-right {
     height: 100%;

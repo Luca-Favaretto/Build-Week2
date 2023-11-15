@@ -151,6 +151,15 @@ button {
 #mid .mid-left::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.767);
 }
+#mid .mid-left .ombra {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: linear-gradient(to bottom, rgba(255, 193, 7, 0.7450980392), transparent);
+}
 #mid .mid-right {
   height: 100%;
   background-color: #000000;
