@@ -48,6 +48,8 @@ const durationTime = document.getElementById("duration-time-music");
 console.log(durationTime);
 const rangePlayer = document.getElementById("range-player");
 console.log(rangePlayer);
+const volumePlayer = document.getElementById("volume");
+console.log(volume);
 // const nextSongBtn = document.getElementById("audio");
 // console.log(nextSongBtn);
 // const previusSongBtn = document.getElementById("audio");
@@ -83,3 +85,8 @@ const updateMediaPlayer = () => {
   rangePlayer.value = (audio.currentTime / audio.duration) * 100;
 };
 const time = setInterval(updateMediaPlayer, 100);
+//// volume
+
+volumePlayer.addEventListener("input", function () {
+  audio.volume = volumePlayer.value / 100;
+});
