@@ -269,7 +269,7 @@
               <section
                 class="d-flex mt-4 album-main-top align-items-center gap-5"
               >
-                <button type="button" id="album-play" class="fs-3">
+                <button type="button" id="album-play" class="fs-3 play-btn">
                   <i class="fas fa-play"></i>
                 </button>
                 <button type="button" id="album-heart">
@@ -815,7 +815,7 @@
                   <li class="d-inline-block">
                     <i class="fas fa-step-backward"></i>
                   </li>
-                  <li class="d-inline-block">
+                  <li class="d-inline-block play-btn">
                     <i class="fas fa-play"></i>
                   </li>
                   <li class="d-inline-block">
@@ -827,16 +827,28 @@
                 </ul>
               </div>
               <div class="col-12 col-xl-8 d-flex align-items-center gap-1">
-                <label class="text-white" for="range-player">10.10</label>
+                <label
+                  class="text-white"
+                  for="range-player"
+                  id="current-time-music"
+                  >10.10</label
+                >
                 <input type="range" id="range-player" min="0" max="100" />
-                <label class="text-white" for="range-player">00:0l</label>
+                <label
+                  class="text-white"
+                  for="range-player"
+                  id="duration-time-music"
+                  >00:0l</label
+                >
               </div>
             </div>
           </div>
           <div class="col-auto d-flex d-md-none align-items-center">
             <ul class="m-0 p-0">
               <li class="d-inline-block"><i class="fas fa-heart fs-1"></i></li>
-              <li class="d-inline-block"><i class="fas fa-play fs-1"></i></li>
+              <li class="d-inline-block play-btn">
+                <i class="fas fa-play fs-1"></i>
+              </li>
             </ul>
           </div>
           <div class="col-auto d-none d-md-flex align-items-center">

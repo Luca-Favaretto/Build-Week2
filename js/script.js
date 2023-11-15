@@ -23,7 +23,7 @@ const arrayMusic = () => {
       console.error("Si è verificato un errore:", error);
     });
 };
-
+arrayMusic();
 ////per tendina amici
 
 const xAsideLeft = document.getElementById("x-aside-left");
@@ -38,25 +38,48 @@ contatti.onclick = () => midRight.classList.remove("d-none");
 ///per controlli media playerd
 const audio = document.getElementById("audio");
 console.log(audio);
-const playBtn = Array.from(document.getElementsByClassName("fa-play"));
-console.log(playBtn[0]);
-const pausaBtn = document.getElementById("audio");
-console.log(pausaBtn);
-const nextSongBtn = document.getElementById("audio");
-console.log(nextSongBtn);
-const previusSongBtn = document.getElementById("audio");
-console.log(previusSongBtn);
+console.log(audio.duration);
+console.log(audio.currentTime);
+const playBtns = Array.from(document.getElementsByClassName("play-btn"));
+console.log(playBtns);
+const currentTime = document.getElementById("current-time-music");
+console.log(currentTime);
+const durationTime = document.getElementById("duration-time-music");
+console.log(durationTime);
+const rangePlayer = document.getElementById("range-player");
+console.log(rangePlayer);
+// const nextSongBtn = document.getElementById("audio");
+// console.log(nextSongBtn);
+// const previusSongBtn = document.getElementById("audio");
+// console.log(previusSongBtn);
 
-const playAudio = function playAudio() {
-  console.log(playBtn);
+const playAudio = btn => {
   audio.play();
+  playBtns.forEach(btn => (btn.innerHTML = ' <i class="fas fa-pause"></i'));
 };
-const stopAudio = function stopAudio() {
-  pausaBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+
+const stopAudio = btn => {
   audio.pause();
+  audio.currentTime = 0; // Reset the audio to the beginning
+  playBtns.forEach(btn => (btn.innerHTML = '<i class="fas fa-play"></i>'));
 };
-playBtn.forEach(btnPlay => {
-  btnPlay.addEventListener("click", function () {
-    playAudio();
+
+playBtns.forEach(btn => {
+  btn.addEventListener("click", function () {
+    // Check the inner HTML to determine if it's a play or pause button
+    if (btn.innerHTML === '<i class="fas fa-play"></i>') {
+      playAudio(btn);
+    } else {
+      stopAudio(btn);
+    }
   });
 });
+////aggioramento barra audio
+
+const updateMediaPlayer = () => {
+  currentTime.innerText = Math.floor(audio.currentTime);
+  durationTime.innerText =
+    Math.floor(audio.duration) - Math.floor(audio.currentTime);
+  rangePlayer.value = (audio.currentTime / audio.duration) * 100;
+};
+const time = setInterval(updateMediaPlayer, 100);
