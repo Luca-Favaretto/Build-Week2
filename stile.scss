@@ -15,12 +15,14 @@ button {
   height: 36px;
   border-radius: 50%;
   position: relative;
+  background-color: #131313;
   svg {
     position: absolute;
     height: 50%;
     width: 50%;
     inset: 0;
     transform: translate(50%, 50%);
+    fill: white;
   }
 }
 
@@ -77,16 +79,16 @@ button {
 }
 #mid {
   overflow: hidden;
-  width: 80%;
   flex-grow: 1;
-  background-color: #121212;
+
   .mid-left {
-    width: 80%;
+    background-color: #1e1e1e;
     overflow-y: auto;
+    flex-grow: 1;
   }
   .mid-right {
     height: 100%;
-    width: 20%;
+
     background-color: #000000;
     #section-friends-right {
       padding: 0.5em;
@@ -105,7 +107,12 @@ button {
     }
   }
 }
-
+.header-home-bg {
+  background: linear-gradient(20deg, #000000 0%, #1e1e1e 70%);
+  h1 {
+    font-size: 3.8em;
+  }
+}
 header {
   > div {
     > div {

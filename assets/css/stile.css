@@ -15,6 +15,7 @@ button {
   height: 36px;
   border-radius: 50%;
   position: relative;
+  background-color: #131313;
 }
 .freccia-btn-home svg {
   position: absolute;
@@ -22,6 +23,7 @@ button {
   width: 50%;
   inset: 0;
   transform: translate(50%, 50%);
+  fill: white;
 }
 
 .dropdown-toggle:not(.no-trasparent)::after {
@@ -76,17 +78,15 @@ button {
 
 #mid {
   overflow: hidden;
-  width: 80%;
   flex-grow: 1;
-  background-color: #121212;
 }
 #mid .mid-left {
-  width: 80%;
+  background-color: #1e1e1e;
   overflow-y: auto;
+  flex-grow: 1;
 }
 #mid .mid-right {
   height: 100%;
-  width: 20%;
   background-color: #000000;
 }
 #mid .mid-right #section-friends-right {
@@ -103,6 +103,13 @@ button {
 #mid .mid-right p {
   color: rgba(255, 255, 255, 0.792);
   font-size: 0.8em;
+}
+
+.header-home-bg {
+  background: linear-gradient(20deg, #000000 0%, #1e1e1e 70%);
+}
+.header-home-bg h1 {
+  font-size: 3.8em;
 }
 
 header > div > div > div > .freccia-btn-home {
