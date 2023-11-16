@@ -419,17 +419,24 @@ li {
     display: none;
   }
 }
-@media screen and (min-width:0px) and (max-width:767px) {
-  #bloccoEminem-artistPage{
-    margin-top: 16.4rem
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #bloccoEminem-artistPage {
+    margin-top: 16.4rem;
   }
 }
-@media screen and (min-width:0px) and (max-width:300px) {
-  html{
-    body{
+@media screen and (min-width: 0px) and (max-width: 300px) {
+  html {
+    body {
       display: none;
     }
-    background-color: #5EC395 ;
+    background-color: #5ec395;
   }
-  
+}
+
+#freccia-artist {
+  margin-top: -12rem;
+  width: 1.6rem;
+  margin-left: 2rem;
+  border-radius: 50%;
+  padding: 0.3rem;
 }
