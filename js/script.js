@@ -32,8 +32,8 @@ const contatti = document.getElementById("contatti");
 console.log(contatti);
 const midRight = document.getElementsByClassName("mid-right")[0];
 console.log(midRight);
-xAsideLeft.onclick = () => midRight.classList.add("d-none");
-contatti.onclick = () => midRight.classList.remove("d-none");
+xAsideLeft.onclick = () => midRight.classList.remove("d-lg-block");
+contatti.onclick = () => midRight.classList.add("d-lg-block");
 
 ///per controlli media playerd
 const audio = document.getElementById("audio");
@@ -59,7 +59,6 @@ console.log(volume);
 
 const playAudio = () => {
   audio.play();
-  console.log("spaghetti");
   playBtns.forEach(btn => {
     btn.classList.remove("fa-play");
     btn.classList.add("fa-pause");
@@ -69,7 +68,6 @@ const playAudio = () => {
 
 const stopAudio = () => {
   audio.pause();
-  console.log("maccheroni");
   audio.currentTime = 0;
   playBtns.forEach(btn => {
     btn.classList.remove("fa-pause");
