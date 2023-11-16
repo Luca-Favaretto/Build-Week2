@@ -5,7 +5,7 @@ const createCard = array => {
   const newArray = array.slice(0, 6);
 
   newArray.forEach(element => {
-    const { title, cover } = element.album;
+    const { title, cover, id } = element.album;
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("col-sm-6");
     cardDiv.classList.add("col-lg-4");
@@ -21,8 +21,8 @@ const createCard = array => {
         </div>
         <div class="col-9 d-flex align-items-center">
           <div id="testo" class="card-body p-2">
-            <p class="withe-trasparent">${title}
-            </p>
+            <a class="withe-trasparent text-decoration-none" href="./album.html?id=${id}">${title}
+            </a>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ const createCard2 = array => {
   const newArray = array.slice(6);
   console.log(newArray);
   newArray.forEach(element => {
-    const { title, cover_medium } = element.album;
+    const { title, cover_medium, id } = element.album;
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("col-12");
     cardDiv.classList.add("col-lg-4");
@@ -58,9 +58,9 @@ const createCard2 = array => {
         <div class="col-7 col-lg-12">
           <div class="card-body text-light">
             <h5 class="card-title">${element.artist.name}</h5>
-            <p class="card-text">
+            <a class="card-text text-decoration-none withe-trasparent" href="./album.html?id=${id}">
             ${title}
-            </p>
+            </a>
           </div>
         </div>
       </div>

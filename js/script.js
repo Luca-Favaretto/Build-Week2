@@ -129,7 +129,8 @@ const createUl = array => {
   ulAside.innerText = "";
   array.forEach(elem => {
     const li = document.createElement("li");
-    li.innerText = elem.title;
+    li.innerHTML = `<a class="withe-trasparent text-decoration-none" href="./album.html?id=${elem.id}">${elem.title}
+    </a>`;
     ulAside.appendChild(li);
   });
 };
