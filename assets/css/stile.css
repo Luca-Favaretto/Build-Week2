@@ -162,7 +162,7 @@ button {
   left: 0;
   right: 0;
   height: 300px;
-  background: linear-gradient(to bottom, rgba(255, 193, 7, 0.7450980392), transparent);
+  background: linear-gradient(to bottom, #F6C343, transparent);
 }
 #mid .mid-right {
   height: 100%;
@@ -360,4 +360,70 @@ li:hover {
 #immagineAnnuncio {
   width: 14rem;
   margin-bottom: -20px !important;
+}
+
+#btn-salva-text {
+  font-size: 1.2rem !important;
+}
+
+#fs-mobile {
+  font-size: 3.6rem;
+}
+
+#download {
+  display: none;
+}
+
+.bg-tranparent {
+  background: transparent;
+}
+
+@media screen and (min-width: 424px) and (max-width: 768px) {
+  #svg-mobile {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #fs-mobile {
+    font-size: 2rem;
+  }
+  #img-center-mobile {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  #freccia-mobile {
+    fill: white;
+    z-index: 1;
+    margin-left: 0rem;
+    position: absolute;
+    /* background: aliceblue; */
+    /* float: left; */
+    margin-right: 23.5rem;
+    margin-top: -0.4rem;
+    /* width: 2rem; */
+    font-size: 2.1rem;
+  }
+  #small {
+    margin-bottom: 1.2rem;
+  }
+  #titolo-mobile {
+    margin-bottom: 18px;
+    font-size: 21.2px;
+    margin-left: 0.5rem;
+    font-weight: bold;
+  }
+  #d-none-mobile {
+    display: none;
+  }
+  #download {
+    display: block;
+  }
+}
+@media screen and (min-width: 574px) {
+  #freccia-mobile {
+    display: none;
+  }
 }
