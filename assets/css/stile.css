@@ -222,7 +222,7 @@ header div.album-home div div ul li {
   display: inline-block;
 }
 
-main section.album-main-top > button[type=button]#album-play {
+main div.album-main-top > button[type=button]#album-play {
   position: relative;
   background-color: #1ed760;
   border-radius: 50%;
@@ -230,20 +230,20 @@ main section.album-main-top > button[type=button]#album-play {
   width: 50px;
   height: 50px;
 }
-main section.album-main-top > button[type=button]#album-play i {
+main div.album-main-top > button[type=button]#album-play i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main section.album-main-top > button[type=button]#album-heart {
+main div.album-main-top > button[type=button]#album-heart {
   background-color: transparent;
 }
-main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-tree-point {
+main div.album-main-top > button[type=button]#album-heart div button[type=button]#album-tree-point {
   border-radius: 50%;
   background-color: transparent;
 }
-main section.album-main-top > button[type=button]#album-heart div button[type=button]#album-hamburger-menu {
+main div.album-main-top > button[type=button]#album-heart div button[type=button]#album-hamburger-menu {
   border-radius: 50%;
 }
 
@@ -420,6 +420,7 @@ li:hover {
   }
   #download {
     display: block;
+    font-size: 2.9rem;
   }
 }
 @media screen and (min-width: 574px) {
