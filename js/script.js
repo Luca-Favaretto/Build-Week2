@@ -60,10 +60,11 @@ const control = () => {
     });
   });
 };
+control();
 ////aggioramento barra audio
 const minTime = function (seconds) {
   let minutes = Math.floor(seconds / 60);
-  let remainingSeconds = seconds;
+  let remainingSeconds = seconds % 60;
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
@@ -95,7 +96,7 @@ const createUl = array => {
   ulAside.innerText = "";
   array.forEach(elem => {
     const li = document.createElement("li");
-    li.innerHTML = `<a class="withe-trasparent text-decoration-none" href="./album.html?id=${elem.id}">${elem.title}
+    li.innerHTML = `<a class="withe-trasparent text-decoration-none" href="./album.html?id=${elem.album.id}">${elem.title}
     </a>`;
     ulAside.appendChild(li);
   });

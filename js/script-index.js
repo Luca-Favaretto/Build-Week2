@@ -26,7 +26,6 @@ const arrayMusic = () => {
       createUl(eminem);
       createCard(eminem);
       createCard2(eminem);
-      control();
     })
     .catch(error => {
       console.error("Si è verificato un errore:", error);
@@ -44,7 +43,9 @@ const createCard = array => {
   const newArray = array.slice(0, 6);
 
   newArray.forEach(element => {
-    const { title, cover, id } = element.album;
+    const {
+      album: { title, cover, id }
+    } = element;
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("col-sm-6");
     cardDiv.classList.add("col-lg-4");
@@ -79,7 +80,11 @@ const createCard2 = array => {
   const newArray = array.slice(6);
   console.log(newArray);
   newArray.forEach(element => {
-    const { title, cover_medium, id } = element.album;
+    const {
+      album: { title, cover_medium, id },
+
+      artist: { name }
+    } = element;
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("col-12");
     cardDiv.classList.add("col-lg-4");
@@ -96,7 +101,7 @@ const createCard2 = array => {
         </div>
         <div class="col-7 col-lg-12">
           <div class="card-body text-light">
-            <h5 class="card-title">${element.artist.name}</h5>
+            <h5 class="card-title">${name}</h5>
             <a class="card-text text-decoration-none withe-trasparent" href="./album.html?id=${id}">
             ${title}
             </a>
