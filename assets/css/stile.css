@@ -337,19 +337,19 @@ li:hover {
   background: transparent;
   border: 1px solid white;
   margin-right: 1rem;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 1rem;
   margin: 0;
 }
 
 #btn-salva {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  margin-right: 1rem;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-right: 25px;
   padding-left: 25px;
-  margin-right: 12px;
 }
 
 #marginTesto {
@@ -368,10 +368,6 @@ li:hover {
 #immagineAnnuncio {
   width: 14rem;
   margin-bottom: -20px !important;
-}
-
-#btn-salva-text {
-  font-size: 1.2rem !important;
 }
 
 #fs-mobile {
