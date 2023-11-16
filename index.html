@@ -45,7 +45,7 @@
               </ul>
             </li>
             <li><i class="fas fa-home"></i>Home</li>
-            <li><i class="fas fa-search"></i>Cerca</li>
+            <li id="search"><i class="fas fa-search"></i>Cerca</li>
             <li>
               <i class="fas fa-layer-group"></i>
               Libreria
@@ -64,7 +64,7 @@
         <div class="dropdown me-auto"></div>
         <hr />
         <div>
-          <ul>
+          <ul id="ul-aside-left">
             <li>loremhehgfdasdfvbaklòsdb dksjrfbjd jerhl</li>
             <li>loremhehgfdasdfvbaklòsdb dksjrfbjd jerhl</li>
             <li>loremhehgfdasdfvbaklòsdb dksjrfbjd jerhl</li>
@@ -229,29 +229,47 @@
                       </button>
                       <ul class="dropdown-menu">
                         <li>
-                          <a class="dropdown-item" href="#" id="contatti">Contatti</a>
+                          <a class="dropdown-item" href="#" id="contatti"
+                            >Contatti</a
+                          >
                         </li>
                         <li>
                           <a class="dropdown-item" href="#">Another action</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <header id="heightAnnuncio" class="d-flex m-2 rounded position-relative header-home-bg">
+              <header
+                id="heightAnnuncio"
+                class="d-flex m-2 rounded position-relative header-home-bg"
+              >
                 <div class="p-3">
-                  <img id="immagineAnnuncio" class="my-3" src="./assets/imgs/main/image-1.jpg" alt="" />
+                  <img
+                    id="immagineAnnuncio"
+                    class="my-3"
+                    src="./assets/imgs/main/image-1.jpg"
+                    alt=""
+                  />
                 </div>
                 <div class="text-light p-3" id="bloccoAnnuncio">
                   <h6 id="marginTesto" class="position-absolute mt-1">Album</h6>
                   <h1 id="testoAnnuncio" class="mt-5">VIOLA (frat. Salmo)</h1>
                   <h6 id="testo" class="mt-4">Fedez, Salmo</h6>
-                  <h6 id="ilNuovoSingolo" class="mt-3 mb-4">Ascolta il nuovo singolo di Fedez e Salmo</h6>
-                  <button id="btn-salva" type="submit" class="rounded-pill play-btn-home">
+                  <h6 id="ilNuovoSingolo" class="mt-3 mb-4">
+                    Ascolta il nuovo singolo di Fedez e Salmo
+                  </h6>
+                  <button
+                    id="btn-salva"
+                    type="submit"
+                    class="rounded-pill play-btn-home"
+                  >
                     <span id="btn-salva-text" class="fs-4">Play</span>
                   </button>
                   <button id="btn-save" type="submit" class="rounded-pill">
@@ -274,7 +292,9 @@
                         <a class="dropdown-item" href="#">Another action</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -419,7 +439,9 @@
             </div>
             <div class="position-relative">
               <h2 class="text-white mt-4 fs-3">Altro di ciò che ti piace</h2>
-              <button class="bg-transparent withe-trasparent position-absolute top-0 mt-3 end-0">
+              <button
+                class="bg-transparent withe-trasparent position-absolute top-0 mt-3 end-0"
+              >
                 VISUALIZZA TUTTO
               </button>
             </div>
@@ -429,7 +451,11 @@
                 <div class="card p-2 black-spoty-bg">
                   <div class="row">
                     <div class="col-4 col-lg-12">
-                      <img src="./assets/imgs/main/image-1.jpg" class="card-img-top" alt="..." />
+                      <img
+                        src="./assets/imgs/main/image-1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
                     </div>
                     <div class="col-6 col-lg-12">
                       <div class="card-body text-light">
@@ -500,8 +526,12 @@
             <div class="d-flex align-items-center">
               <img src="./assets/imgs/main/image-11.jpg" width="70px" alt="" />
               <div class="ms-2">
-                <h3 class="withe-trasparent m-0">titolo canzone</h3>
-                <p class="withe-trasparent m-0">autore</p>
+                <h3 class="withe-trasparent m-0" id="media-active-title">
+                  titolo canzone
+                </h3>
+                <p class="withe-trasparent m-0" id="media-active-autor">
+                  autore
+                </p>
               </div>
             </div>
           </div>
@@ -515,7 +545,7 @@
                   <li class="d-inline-block">
                     <i class="fas fa-step-backward"></i>
                   </li>
-                  <li class="d-inline-block">
+                  <li class="d-inline-block play-btn li-play">
                     <i class="fas fa-play"></i>
                   </li>
                   <li class="d-inline-block">
@@ -527,16 +557,28 @@
                 </ul>
               </div>
               <div class="col-12 col-xl-8 d-flex align-items-center gap-1">
-                <label class="text-white" for="range-player">10.10</label>
+                <label
+                  class="text-white"
+                  for="range-player"
+                  id="current-time-music"
+                  >10.10</label
+                >
                 <input type="range" id="range-player" min="0" max="100" />
-                <label class="text-white" for="range-player">00:0l</label>
+                <label
+                  class="text-white"
+                  for="range-player"
+                  id="duration-time-music"
+                  >00:0l</label
+                >
               </div>
             </div>
           </div>
           <div class="col-auto d-flex d-md-none align-items-center">
             <ul class="m-0 p-0">
               <li class="d-inline-block"><i class="fas fa-heart fs-1"></i></li>
-              <li class="d-inline-block"><i class="fas fa-play fs-1"></i></li>
+              <li class="d-inline-block play-btn fs-1">
+                <i class="fas fa-play"></i>
+              </li>
             </ul>
           </div>
           <div class="col-auto d-none d-md-flex align-items-center">
@@ -550,7 +592,7 @@
                 <label for="volume">
                   <i class="fas fa-volume-down me-2"></i>
                 </label>
-                <input type="range" id="volume" />
+                <input type="range" id="volume" min="0" max="100" />
               </li>
               <li class="d-inline-block"><i class="fas fa-expand-alt"></i></li>
             </ul>
@@ -558,7 +600,11 @@
         </div>
       </div>
     </section>
-    <audio class="text-white" src=""></audio>
+    <audio
+      id="audio"
+      class="text-white"
+      src="https://cdns-preview-c.dzcdn.net/stream/c-c45ae335d3f89e153c37217f4495cefc-4.mp3"
+    ></audio>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
