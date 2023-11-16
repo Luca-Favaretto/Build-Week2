@@ -1,29 +1,3 @@
-const url = "https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem";
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "7a2d1c8d36mshefbc94c09d4f245p1bbdcajsn7d5390404f7c",
-    "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com"
-  }
-};
-const arrayMusic = () => {
-  fetch(url, options)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(
-          "Errore nella richiesta HTTP, stato " + response.status
-        );
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log("Dati ricevuti con successo:", data);
-    })
-    .catch(error => {
-      console.error("Si è verificato un errore:", error);
-    });
-};
-arrayMusic();
 ////per tendina amici
 
 const xAsideLeft = document.getElementById("x-aside-left");
@@ -75,16 +49,17 @@ const stopAudio = () => {
     console.log(playBtns);
   });
 };
-playBtns.forEach(btn => {
-  btn.addEventListener("click", function () {
-    if (btn.classList.contains("fa-play")) {
-      playAudio();
-    } else {
-      stopAudio();
-    }
+const control = () => {
+  playBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+      if (btn.classList.contains("fa-play")) {
+        playAudio();
+      } else {
+        stopAudio();
+      }
+    });
   });
-});
-
+};
 ////aggioramento barra audio
 const minTime = function (seconds) {
   let minutes = Math.floor(seconds / 60);
@@ -112,3 +87,54 @@ const time = setInterval(updateMediaPlayer, 100);
 volumePlayer.addEventListener("input", function () {
   audio.volume = volumePlayer.value / 100;
 });
+///aquisizione api
+const url = "https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem";
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "7a2d1c8d36mshefbc94c09d4f245p1bbdcajsn7d5390404f7c",
+    "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com"
+  }
+};
+
+const arrayMusic = () => {
+  fetch(url, options)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(
+          "Errore nella richiesta HTTP, stato " + response.status
+        );
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log("Dati ricevuti con successo:", data);
+      const eminem = data.data;
+      console.log(eminem);
+      console.log(eminem[1].album.title);
+      createUl(eminem);
+      createCard(eminem);
+      createCard2(eminem);
+      control();
+    })
+    .catch(error => {
+      console.error("Si è verificato un errore:", error);
+    });
+};
+
+///aside left with api
+const createUl = array => {
+  const ulAside = document.getElementById("ul-aside-left");
+  console.log(ulAside);
+  ulAside.innerText = "";
+  array.forEach(elem => {
+    const li = document.createElement("li");
+    li.innerText = elem.title;
+    ulAside.appendChild(li);
+  });
+};
+
+window.onload = () => {
+  arrayMusic();
+};
+window.DOMException;
