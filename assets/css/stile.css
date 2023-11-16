@@ -423,4 +423,17 @@ li:hover {
   #freccia-mobile {
     display: none;
   }
-}/*# sourceMappingURL=stile.css.map */
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #bloccoEminem-artistPage {
+    margin-top: 16.4rem;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 300px) {
+  html {
+    background-color: #5EC395;
+  }
+  html body {
+    display: none;
+  }
+}
