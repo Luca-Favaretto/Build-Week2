@@ -32,8 +32,8 @@ const contatti = document.getElementById("contatti");
 console.log(contatti);
 const midRight = document.getElementsByClassName("mid-right")[0];
 console.log(midRight);
-xAsideLeft.onclick = () => midRight.classList.remove("d-lg-block");
-contatti.onclick = () => midRight.classList.add("d-lg-block");
+xAsideLeft.onclick = () => midRight.classList.remove("d-xl-block");
+contatti.onclick = () => midRight.classList.add("d-xl-block");
 
 ///per controlli media playerd
 const audio = document.getElementById("audio");

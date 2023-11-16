@@ -34,6 +34,14 @@ button {
   height: calc(100vh - 120px);
 }
 
+.ellipsis-two {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 3em;
+  text-overflow: ellipsis;
+}
+
 .freccia-btn-artist {
   background-color: transparent;
   width: 36px;
