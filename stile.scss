@@ -147,7 +147,7 @@ button {
       left: 0;
       right: 0;
       height: 300px;
-      background: linear-gradient(to bottom, #ffc107be, transparent);
+      background: linear-gradient(to bottom, #f6c343, transparent);
     }
   }
   .mid-right {
@@ -222,8 +222,8 @@ header {
 }
 
 main {
-  section.album-main-top {
-    > button[type="button"]#album-play {
+  div.album-main-top {
+    > button[type="button"].album-play {
       position: relative;
       background-color: $green-spoty;
       border-radius: 50%;
@@ -323,12 +323,103 @@ li {
   padding: 1em 3em;
   margin-right: 2em;
 }
+.ellipsis {
+  font-size: 3em;
+}
 #btn-save {
   background: transparent;
   border: 1px solid white;
-  margin-right: 2em;
-  padding: 1em 3em;
+  margin-right: 1rem;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin: 0;
 }
-.ellipsis {
-  font-size: 3em;
+#btn-salva {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: 12px;
+}
+
+#marginTesto {
+  margin-top: 1.4rem !important;
+}
+
+#testoAnnuncio {
+  margin-top: 37px !important;
+}
+#ilNuovoSingolo {
+  margin-top: -1px !important;
+  margin-bottom: 12px !important;
+}
+
+#immagineAnnuncio {
+  width: 14rem;
+  margin-bottom: -20px !important;
+}
+#btn-salva-text {
+  font-size: 1.2rem !important;
+}
+#fs-mobile {
+  font-size: 3.6rem;
+}
+
+.bg-tranparent {
+  background: transparent;
+}
+@media screen and (min-width: 424px) and (max-width: 768px) {
+  #svg-mobile {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #fs-mobile {
+    font-size: 2rem;
+  }
+  #img-center-mobile {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  #freccia-mobile {
+    fill: white;
+    z-index: 1;
+    margin-left: 0rem;
+    position: absolute;
+    /* background: aliceblue; */
+    /* float: left; */
+    margin-right: 23.5rem;
+    margin-top: -0.4rem;
+    /* width: 2rem; */
+    font-size: 2.1rem;
+  }
+  #small {
+    margin-bottom: 1.2rem;
+  }
+
+  #titolo-mobile {
+    margin-bottom: 18px;
+    font-size: 21.2px;
+    margin-left: 0.5rem;
+    font-weight: bold;
+  }
+  #d-none-mobile {
+    display: none;
+  }
+  #download {
+    display: block;
+    font-size: 2.9rem;
+  }
+  .button-play {
+  }
+}
+@media screen and (min-width: 574px) {
+  #freccia-mobile {
+    display: none;
+  }
 }
