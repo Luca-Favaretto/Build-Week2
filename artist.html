@@ -256,8 +256,8 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex flex-column justify-content-end p-3">
-              <div>
+            <div id="titoloInMobile" class="d-flex flex-column justify-content-end p-3">
+              <div class="d-none d-md-block">
                 <svg
                   data-encore-id="icon"
                   role="img"
@@ -273,9 +273,9 @@
                 </svg>
                 <p class="d-inline-block text-white">artista certificato</p>
               </div>
-              <div>
-                <h1 class="text-white">Eminem</h1>
-                <p class="text-white">33763765378538 Ascolti mensili</p>
+              <div id="blocco-mobile-titolo" class="text-white">
+                <h1 class="">Eminem</h1>
+                <p id="colore-scuro-in-mobilePage" class="">33763765378538 Ascolti mensili</p>
               </div>
             </div>
           </header>
@@ -855,6 +855,7 @@
               </div>
             </div>
           </div>
+          
           <div class="col d-none d-lg-block">
             <div class="d-flex row flex-column align-items-center">
               <div class="col-12">
@@ -878,17 +879,17 @@
               </div>
               <div class="col-12 col-xl-8 d-flex align-items-center gap-1">
                 <label
-                  class="text-white"
-                  for="range-player"
-                  id="current-time-music"
-                  >10.10</label
+                class="text-white"
+                for="range-player"
+                id="current-time-music"
+                >10.10</label
                 >
                 <input type="range" id="range-player" min="0" max="100" />
                 <label
-                  class="text-white"
-                  for="range-player"
-                  id="duration-time-music"
-                  >00:0l</label
+                class="text-white"
+                for="range-player"
+                id="duration-time-music"
+                >00:0l</label
                 >
               </div>
             </div>
@@ -919,6 +920,19 @@
           </div>
         </div>
       </div>
+      <!-- <div id="blocco-div-mobile" class="bg-dark text-light d-block d-md-none position-">
+        <div class="row">
+          <div class="row justify-content-center pt-3">
+            
+            <div class="col-4"><i class="fas fa-home"></i></div>
+            <div class="col-4"><i class="fas fa-search"></i></div>
+            <div class="col-4"><i class="fas fa-books"></i></div>
+          </div>
+          <div class="col-4"><h4>Home </h4></div>
+          <div class="col-4">Cerca</div>
+          <div class="col-4">La tua Libreria</div>
+        </div>
+      </div> -->
     </section>
     <audio
       id="audio"
