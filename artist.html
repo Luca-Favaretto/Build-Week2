@@ -49,8 +49,8 @@
                 href="./index.html"
                 class="withe-trasparent text-decoration-none"
               >
-                <i class="fas fa-home"></i>Home</a
-              >
+                <i class="fas fa-home"></i>Home
+              </a>
             </li>
 
             <li id="search">
@@ -453,12 +453,19 @@
         </div>
       </section>
     </div>
-    <section id="media-player" class="p-3">
+    <section id="media-player" class="p-3 z-3 d-flex align-items-center">
       <div class="container-fluid">
         <div class="row">
           <div class="col-auto me-auto">
             <div class="d-flex align-items-center">
-              <img src="./assets/imgs/main/image-11.jpg" width="70px" alt="" />
+              <div class="d-none d-md-block">
+                <img
+                  src="./assets/imgs/main/image-11.jpg"
+                  width="70px"
+                  alt="img-song"
+                  id="img-media-player"
+                />
+              </div>
               <div class="ms-2">
                 <h3 class="withe-trasparent m-0" id="media-active-title">
                   Rino Gaetano
@@ -469,8 +476,7 @@
               </div>
             </div>
           </div>
-
-          <div class="col d-none d-lg-block">
+          <div class="col d-none d-md-block">
             <div class="d-flex row flex-column align-items-center">
               <div class="col-12">
                 <ul class="text-center p-0">
@@ -510,19 +516,25 @@
           </div>
           <div class="col-auto d-flex d-md-none align-items-center">
             <ul class="m-0 p-0">
-              <li class="d-inline-block"><i class="fas fa-heart fs-1"></i></li>
-              <li class="d-inline-block play-btn fs-1">
-                <i class="fas fa-play"></i>
+              <li class="d-inline-block">
+                <i class="fas fa-heart fs-1"></i>
+              </li>
+              <li class="d-inline-block play-btn">
+                <i class="fas fa-play fs-1"></i>
               </li>
             </ul>
           </div>
           <div class="col-auto d-none d-md-flex align-items-center">
-            <ul class="m-0">
-              <li class="d-inline-block">
+            <ul class="m-0 p-0">
+              <li class="dlg--inline-block d-none">
                 <i class="fas fa-microphone-alt"></i>
               </li>
-              <li class="d-inline-block"><i class="fas fa-bars"></i></li>
-              <li class="d-inline-block"><i class="fas fa-podcast"></i></li>
+              <li class="d-lg-inline-block d-none">
+                <i class="fas fa-bars"></i>
+              </li>
+              <li class="d-lg-inline-block d-none">
+                <i class="fas fa-podcast"></i>
+              </li>
               <li class="d-inline-flex align-items-center">
                 <label for="volume">
                   <i class="fas fa-volume-down me-2"></i>
@@ -534,20 +546,42 @@
           </div>
         </div>
       </div>
-      <!-- <div id="blocco-div-mobile" class="bg-dark text-light d-block d-md-none position-">
-        <div class="row">
-          <div class="row justify-content-center pt-3">
-            
-            <div class="col-4"><i class="fas fa-home"></i></div>
-            <div class="col-4"><i class="fas fa-search"></i></div>
-            <div class="col-4"><i class="fas fa-books"></i></div>
+      <div
+        class="d-flex d-md-none justify-content-around gray-spoty-bg p-2 position-absolute mobile-navbar"
+      >
+        <div class="flex-column">
+          <div class="d-flex justify-content-center">
+            <i class="fas fa-home m-a withe-trasparent"></i>
           </div>
-          <div class="col-4"><h4>Home </h4></div>
-          <div class="col-4">Cerca</div>
-          <div class="col-4">La tua Libreria</div>
+          <div>
+            <a class="text-decoration-none withe-trasparent" href="./index.html"
+              >Home</a
+            >
+          </div>
         </div>
-      </div> -->
+        <div class="flex-column">
+          <div class="d-flex justify-content-center">
+            <i class="fas fa-search withe-trasparent"></i>
+          </div>
+          <div>
+            <a
+              class="text-decoration-none withe-trasparent"
+              href="./search.html"
+              >Cerca</a
+            >
+          </div>
+        </div>
+        <div class="flex-column">
+          <div class="d-flex justify-content-center">
+            <i class="fas fa-layer-group withe-trasparent"></i>
+          </div>
+          <div>
+            <a class="text-decoration-none withe-trasparent">La tua libreria</a>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- <div class="container-fluid gray-spoty-bg p-2"></div> -->
     <audio
       id="audio"
       class="text-white"
@@ -559,6 +593,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/script.js"></script>
-    <script src="./js/script-artist.js"></script>
+    <script src="./js/script-artist.js
+    "></script>
   </body>
 </html>
