@@ -28,10 +28,8 @@ const createCardSearch = array => {
           </div>
           <div class="col-7 col-lg-12">
             <div class="card-body text-light">
-              <h5 class="card-title">${name}</h5>
-              <a class="card-text text-decoration-none withe-trasparent no-wrap" href="./album.html?id=${id}">
-              ${title}
-              </a>
+            <a class="card-title fs-5 text-decoration-none" href="./artist.html?id=${element.artist.id}">${name}</a><br/>
+            <a class="card-text text-decoration-none withe-trasparent no-wrap" href="./album.html?id=${id}">
             </div>
           </div>
         </div>
@@ -80,6 +78,7 @@ const arrayMusic = params => {
       createUl(search);
 
       createCardSearch(search);
+      control();
     })
     .catch(error => {
       console.error("Si è verificato un errore:", error);

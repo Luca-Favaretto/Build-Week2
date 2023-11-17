@@ -1,3 +1,13 @@
+const newSong = (title, autor, preview) => {
+  const titleMedia = document.getElementById("media-active-title");
+  console.log(title);
+  const autorMedia = document.getElementById("media-active-autor");
+  console.log(autor);
+  titleMedia.innerText = title;
+  autorMedia.innerText = autor;
+  audio.src = preview;
+};
+
 ////per tendina amici
 
 const xAsideLeft = document.getElementById("x-aside-left");
@@ -60,7 +70,7 @@ const control = () => {
     });
   });
 };
-control();
+
 ////aggioramento barra audio
 const minTime = function (seconds) {
   let minutes = Math.floor(seconds / 60);
