@@ -60,7 +60,7 @@ const control = () => {
     });
   });
 };
-control();
+
 ////aggioramento barra audio
 const minTime = function (seconds) {
   let minutes = Math.floor(seconds / 60);

@@ -24,8 +24,6 @@ const arrayMusic = () => {
       console.log(eminem);
       console.log(eminem[1].album.title);
       createUl(eminem);
-
-      control();
     })
     .catch(error => {
       console.error("Si è verificato un errore:", error);
@@ -78,7 +76,7 @@ const arrayAlbum = () => {
       tracks.data.forEach(song => {
         count++;
         const {
-          artist: { name },
+          artist: { name, id },
           preview,
           title,
           title_short,
@@ -98,8 +96,8 @@ const arrayAlbum = () => {
             <p class="mb-0" onclick="newSong('${title_short}','${name}','${preview}')">
             ${title}
             </p>
-            <p class="text-secondary">${name}</p>
-          </div>
+            <a class="text-secondary text-decoration-none" href="./artist.html?id=${id}">${name}</a>
+            </div>
        </div>
       </div>
       <div class="col-4 text-end text-secondary d-none d-md-block">
