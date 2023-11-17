@@ -88,6 +88,8 @@ const arrayAlbum = () => {
         const div = document.createElement("div");
         div.classList.add("col-12");
         div.classList.add("d-flex");
+        div.classList.add("z-1");
+
         div.classList.add("align-items-center");
         div.innerHTML = `
        <div class="col-10 col-md-6  d-flex ">

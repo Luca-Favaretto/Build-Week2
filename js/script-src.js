@@ -1,6 +1,8 @@
-const createCard2 = array => {
+const createCardSearch = array => {
   const containerCard = document.getElementById("card-container");
   console.log(containerCard);
+  console.log(array);
+  containerCard.innerHTML = "";
 
   array.forEach(element => {
     const {
@@ -10,7 +12,9 @@ const createCard2 = array => {
     } = element;
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("col-12");
-    cardDiv.classList.add("col-lg-4");
+    cardDiv.classList.add("col-md-6");
+    cardDiv.classList.add("col-lg-3");
+
     cardDiv.classList.add("mt-4");
     cardDiv.innerHTML = `
       <div class="card p-2 black-spoty-bg">
@@ -25,7 +29,7 @@ const createCard2 = array => {
           <div class="col-7 col-lg-12">
             <div class="card-body text-light">
               <h5 class="card-title">${name}</h5>
-              <a class="card-text text-decoration-none withe-trasparent" href="./album.html?id=${id}">
+              <a class="card-text text-decoration-none withe-trasparent no-wrap" href="./album.html?id=${id}">
               ${title}
               </a>
             </div>
@@ -43,7 +47,7 @@ const createCard2 = array => {
   });
 };
 ///aquisizione api
-const url = "https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem";
+const url = "https://deezerdevs-deezer.p.rapidapi.com/search?q=";
 const options = {
   method: "GET",
   headers: {
@@ -52,8 +56,15 @@ const options = {
   }
 };
 
-const arrayMusic = () => {
-  fetch(url, options)
+let params = "eminem";
+
+let input = document.getElementById("input-search");
+console.log(input);
+let form = document.getElementById("form-search");
+console.log(form);
+
+const arrayMusic = params => {
+  fetch(url + params, options)
     .then(response => {
       if (!response.ok) {
         throw new Error(
@@ -64,17 +75,26 @@ const arrayMusic = () => {
     })
     .then(data => {
       console.log("Dati ricevuti con successo:", data);
-      const eminem = data.data;
-      console.log(eminem);
-      console.log(eminem[1].album.title);
-      createUl(eminem);
+      const search = data.data;
 
-      createCard2(eminem);
+      createUl(search);
+
+      createCardSearch(search);
     })
     .catch(error => {
       console.error("Si è verificato un errore:", error);
     });
 };
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  if (input.value !== "") {
+    params = input.value;
+  }
+  console.log(input.value);
+  console.log(params);
+  arrayMusic(params);
+});
 window.onload = () => {
-  arrayMusic();
+  arrayMusic(params);
 };

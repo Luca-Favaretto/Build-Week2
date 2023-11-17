@@ -176,7 +176,9 @@
       <section id="mid" class="d-flex">
         <div class="mid-left p-0 grow-1">
           <!-- Home-page parte centrale -->
-          <header class="header-artist m-0 d-flex flex-column justify-content-between">
+          <header
+            class="header-artist m-0 d-flex flex-column justify-content-between"
+          >
             <div class="container d-none d-md-block">
               <div class="p-3">
                 <div class="d-flex justify-content-between">
@@ -220,13 +222,17 @@
                       </button>
                       <ul class="dropdown-menu">
                         <li>
-                          <a class="dropdown-item" href="#" id="contatti">Contatti</a>
+                          <a class="dropdown-item" href="#" id="contatti"
+                            >Contatti</a
+                          >
                         </li>
                         <li>
                           <a class="dropdown-item" href="#">Another action</a>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
                         </li>
                       </ul>
                     </div>
@@ -237,7 +243,10 @@
             <dib id="freccia-artist" class="bg-danger">
               <i class="fas fa-arrow-left"></i>
             </dib>
-            <div id="bloccoEminem-artistPage" class="d-flex flex-column justify-content-end p-3">
+            <div
+              id="bloccoEminem-artistPage"
+              class="d-flex flex-column justify-content-end p-3"
+            >
               <div>
                 <svg
                   data-encore-id="icon"
@@ -262,7 +271,9 @@
           </header>
           <div class="container">
             <main class="p-3">
-              <section class="d-flex mt-4 album-main-top align-items-center gap-5">
+              <section
+                class="d-flex mt-4 album-main-top align-items-center gap-5"
+              >
                 <button type="button" id="album-play" class="fs-3 play-btn">
                   <i class="fas fa-play"></i>
                 </button>
@@ -271,23 +282,59 @@
                 </button>
                 <div class="dropdown me-auto">
                   <button
-                    class="btn btn-dark dropdown-toggle bg-transparent border-0 withe-trasparent fs-3"
                     type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    id="album-tree-point"
+                    class="z-0 button-play d-none d-md-block album-play"
                   >
-                    <i class="fas fa-ellipsis-h"></i>
+                    <i class="fas fa-play"></i>
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
+
+                  <button type="button" id="album-heart" class="z-0">
+                    <i class="far fa-heart fs-1 withe-trasparent"></i></button
+                  ><button class="bg-tranparent z-1 fs-1">
+                    <i
+                      class="withe-trasparent far fa-arrow-alt-circle-down"
+                    ></i>
+                  </button>
+                  <div class="dropdown me-auto">
+                    <button
+                      class="btn btn-darkbg-transparent border-0"
+                      type="button"
+                      aria-expanded="false"
+                      id="album-tree-point"
+                    >
+                      <i
+                        class="fas fa-ellipsis-h d-none d-md-block fs-2 withe-trasparent"
+                      ></i>
+                      <i
+                        class="fas fa-ellipsis-v d-block d-md-none fs-2 withe-trasparent"
+                      ></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="album-main-top align-items-center d-flex">
+                  <button
+                    type="button"
+                    class="z-0 button-play d-block d-md-none bg-transparent withe-trasparent fs-3 me-3"
+                  >
+                    <i class="fas fa-random"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="z-0 button-play d-block d-md-none album-play"
+                  >
+                    <i class="fas fa-play"></i>
+                  </button>
                 </div>
               </section>
               <section class="mt-3">
@@ -297,11 +344,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 withe-trasparent">34.34</p>
@@ -310,11 +365,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -323,11 +386,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -336,11 +407,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -349,11 +428,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -362,11 +449,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -375,11 +470,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -388,11 +491,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -401,11 +512,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -414,11 +533,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -427,11 +554,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -440,11 +575,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -453,11 +596,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -466,11 +617,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -479,11 +638,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -492,11 +659,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -505,11 +680,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -518,11 +701,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -531,11 +722,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -544,11 +743,19 @@
                     <div class="d-flex mt-3">
                       <div class="grow-3 d-flex align-items-center gap-2">
                         <p class="m-0 text-white">1</p>
-                        <img src="./assets/imgs/main/image-1.jpg" alt="" width="50px" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          alt=""
+                          width="50px"
+                        />
                         <p class="m-0 text-white">Titolo canzone</p>
                       </div>
                       <div class="grow-2 align-items-center d-flex">
-                        <p class="withe-trasparent m-0 d-none d-md-inline-block">3452345234</p>
+                        <p
+                          class="withe-trasparent m-0 d-none d-md-inline-block"
+                        >
+                          3452345234
+                        </p>
                       </div>
                       <div class="grow-1 align-items-center d-flex">
                         <p class="m-0 with-trasparent">34.34</p>
@@ -561,10 +768,16 @@
                     </div>
                     <div class="d-flex">
                       <div>
-                        <img src="./assets/imgs/main/image-1.jpg" width="60px" class="rounded-circle" />
+                        <img
+                          src="./assets/imgs/main/image-1.jpg"
+                          width="60px"
+                          class="rounded-circle"
+                        />
                       </div>
                       <div>
-                        <p class="text-white">Hai messo mi piace a 11 Brani di</p>
+                        <p class="text-white">
+                          Hai messo mi piace a 11 Brani di
+                        </p>
                         <p class="withe-trasparent">Eminem</p>
                       </div>
                     </div>
@@ -628,8 +841,12 @@
             <div class="d-flex align-items-center">
               <img src="./assets/imgs/main/image-11.jpg" width="70px" alt="" />
               <div class="ms-2">
-                <h3 class="withe-trasparent m-0" id="media-active-title">titolo canzone</h3>
-                <p class="withe-trasparent m-0" id="media-active-autor">autore</p>
+                <h3 class="withe-trasparent m-0" id="media-active-title">
+                  titolo canzone
+                </h3>
+                <p class="withe-trasparent m-0" id="media-active-autor">
+                  autore
+                </p>
               </div>
             </div>
           </div>
@@ -655,9 +872,19 @@
                 </ul>
               </div>
               <div class="col-12 col-xl-8 d-flex align-items-center gap-1">
-                <label class="text-white" for="range-player" id="current-time-music">10.10</label>
+                <label
+                  class="text-white"
+                  for="range-player"
+                  id="current-time-music"
+                  >10.10</label
+                >
                 <input type="range" id="range-player" min="0" max="100" />
-                <label class="text-white" for="range-player" id="duration-time-music">00:0l</label>
+                <label
+                  class="text-white"
+                  for="range-player"
+                  id="duration-time-music"
+                  >00:0l</label
+                >
               </div>
             </div>
           </div>
