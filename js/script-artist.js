@@ -3,10 +3,12 @@ const creation = array => {
   console.log(containerArtist);
   containerArtist.innerHTML = "";
   let count = 0;
-  array.forEach(element => {
+  const newArray = array.slice(0, 10);
+  newArray.forEach(element => {
     count++;
     const {
       album: { cover_small },
+      artist: { name },
 
       title,
       rank,
@@ -26,7 +28,7 @@ const creation = array => {
       alt=""
       width="50px"
     />
-    <p class="m-0 text-white">${title}</p>
+    <p class="m-0 text-white" onclick="newSong('${title}','${name}','${preview}')">${title}</p>
   </div>
   <div class="col-4 align-items-center d-none d-md-flex">
     <p class="withe-trasparent m-0">${rank}</p>
@@ -38,6 +40,27 @@ const creation = array => {
     containerArtist.appendChild(div);
   });
 };
+const createUlArtist = array => {
+  const ulAside = document.getElementById("ul-aside-left");
+  console.log(ulAside);
+  ulAside.innerText = "";
+  const newArray = array.slice(11, 30);
+  newArray.forEach(elem => {
+    const li = document.createElement("li");
+    const {
+      album: { cover_small },
+      artist: { name },
+      title,
+      rank,
+      duration,
+      preview
+    } = elem;
+    li.innerHTML = `<a class="withe-trasparent text-decoration-none" onclick="newSong('${title}','${name}','${preview}')">${elem.title}
+    </a>`;
+    ulAside.appendChild(li);
+  });
+};
+
 ///aquisizione api
 let params = new URLSearchParams(window.location.search).get("id");
 console.log(params);
@@ -65,8 +88,6 @@ const arrayMusic = () => {
       const artist = data;
       console.log(artist);
       artistModification(artist);
-
-      control();
     })
     .catch(error => {
       console.error("Si è verificato un errore:", error);
@@ -81,8 +102,6 @@ const artistModification = date => {
   const rank = document.getElementById("rank");
   console.log(rank);
 
-  const ulAside = document.getElementById("ul-aside-left");
-  console.log(ulAside);
   const { name, nb_fan, picture_big, id } = date;
   headerArtist.style.backgroundImage = `url(${picture_big})`;
   nameArtist.innerText = name;
@@ -90,7 +109,7 @@ const artistModification = date => {
 
   console.log(id);
   fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/artist/${id}/top?limit=10`,
+    `https://striveschool-api.herokuapp.com/api/deezer/artist/${id}/top?limit=30`,
     options
   )
     .then(response => {
@@ -107,6 +126,7 @@ const artistModification = date => {
       console.log(artistTracks);
       // containerArtist.innerHTML = "";
       creation(artistTracks);
+      createUlArtist(artistTracks);
 
       control();
     })

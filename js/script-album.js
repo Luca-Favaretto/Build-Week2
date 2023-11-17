@@ -148,15 +148,6 @@ console.log(timeSongs);
 const containerTrack = document.getElementById("container-track");
 console.log(containerTrack);
 
-const newSong = (title, autor, preview) => {
-  const titleMedia = document.getElementById("media-active-title");
-  console.log(title);
-  const autorMedia = document.getElementById("media-active-autor");
-  console.log(autor);
-  titleMedia.innerText = title;
-  autorMedia.innerText = autor;
-  audio.src = preview;
-};
 window.onload = () => {
   arrayMusic();
   arrayAlbum();
