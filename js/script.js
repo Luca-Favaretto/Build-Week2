@@ -1,10 +1,13 @@
-const newSong = (title, autor, preview) => {
+const newSong = (title, autor, cover, preview) => {
   const titleMedia = document.getElementById("media-active-title");
   console.log(title);
   const autorMedia = document.getElementById("media-active-autor");
   console.log(autor);
+  const imgMedia = document.getElementById("img-media-player");
+  console.log(imgMedia);
   titleMedia.innerText = title;
   autorMedia.innerText = autor;
+  imgMedia.src = cover;
   audio.src = preview;
 };
 

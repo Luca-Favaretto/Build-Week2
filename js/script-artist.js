@@ -28,7 +28,7 @@ const creation = array => {
       alt=""
       width="50px"
     />
-    <p class="m-0 text-white" onclick="newSong('${title}','${name}','${preview}')">${title}</p>
+    <p class="m-0 text-white" onclick="newSong('${title}','${name}','${cover_small}','${preview}')">${title}</p>
   </div>
   <div class="col-4 align-items-center d-none d-md-flex">
     <p class="withe-trasparent m-0">${rank}</p>
@@ -55,7 +55,7 @@ const createUlArtist = array => {
       duration,
       preview
     } = elem;
-    li.innerHTML = `<a class="withe-trasparent text-decoration-none" onclick="newSong('${title}','${name}','${preview}')">${elem.title}
+    li.innerHTML = `<a class="withe-trasparent text-decoration-none" onclick="newSong('${title}','${name}','${cover_small}','${preview}')">${elem.title}
     </a>`;
     ulAside.appendChild(li);
   });

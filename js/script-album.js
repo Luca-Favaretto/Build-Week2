@@ -81,7 +81,8 @@ const arrayAlbum = () => {
           title,
           title_short,
           rank,
-          duration
+          duration,
+          album: { cover_small }
         } = song;
         const div = document.createElement("div");
         div.classList.add("col-12");
@@ -93,7 +94,7 @@ const arrayAlbum = () => {
        <div class="col-10 col-md-6  d-flex ">
           <div class="align-self-center"><p class="m-0">${count}</p></div>
           <div class="ms-4 mt-4">
-            <p class="mb-0" onclick="newSong('${title_short}','${name}','${preview}')">
+            <p class="mb-0" onclick="newSong('${title_short}','${name}','${cover_small}','${preview}')">
             ${title}
             </p>
             <a class="text-secondary text-decoration-none" href="./artist.html?id=${id}">${name}</a>
