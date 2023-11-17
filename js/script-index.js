@@ -87,7 +87,7 @@ const createCard2 = array => {
     } = element;
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("col-12");
-    cardDiv.classList.add("col-lg-4");
+    cardDiv.classList.add("col-lg-3");
     cardDiv.classList.add("mt-4");
     cardDiv.innerHTML = `
     <div class="card p-2 black-spoty-bg">
