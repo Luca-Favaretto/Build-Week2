@@ -426,9 +426,15 @@ li:hover {
     display: block;
     font-size: 2.9rem;
   }
+  #titoloInMobile {
+    margin-top: 16.2rem;
+  }
+  #colore-scuro-in-mobilePage {
+    color: #9E9E9C;
+  }
 }
 @media screen and (min-width: 574px) {
   #freccia-mobile {
     display: none;
   }
-}/*# sourceMappingURL=stile.css.map */
+}
