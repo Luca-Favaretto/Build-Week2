@@ -44,7 +44,7 @@ const createUlArtist = array => {
   const ulAside = document.getElementById("ul-aside-left");
   console.log(ulAside);
   ulAside.innerText = "";
-  const newArray = array.slice(11, 30);
+  const newArray = array.slice(10, 30);
   newArray.forEach(elem => {
     const li = document.createElement("li");
     const {

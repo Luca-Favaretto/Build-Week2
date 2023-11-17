@@ -341,19 +341,12 @@ li:hover {
   background: transparent;
   border: 1px solid white;
   margin-right: 1rem;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-right: 25px;
-  padding-left: 1rem;
-  margin: 0;
+  padding: 12px 25px;
 }
 
 #btn-salva {
   margin-right: 1rem;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: 12px 30px;
 }
 
 #marginTesto {
@@ -430,11 +423,11 @@ li:hover {
     margin-top: 16.2rem;
   }
   #colore-scuro-in-mobilePage {
-    color: #9E9E9C;
+    color: #9e9e9c;
   }
 }
 @media screen and (min-width: 574px) {
   #freccia-mobile {
     display: none;
   }
-}
+}/*# sourceMappingURL=stile.css.map */
