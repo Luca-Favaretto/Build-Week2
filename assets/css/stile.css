@@ -430,4 +430,16 @@ li:hover {
   #freccia-mobile {
     display: none;
   }
+}
+@media screen and (max-width: 676px) {
+  #media-player {
+    bottom: 70px;
+  }
+}
+.mobile-navbar {
+  right: 0;
+  left: 0;
+  bottom: -70px;
+  height: 70px;
+  align-items: center;
 }/*# sourceMappingURL=stile.css.map */

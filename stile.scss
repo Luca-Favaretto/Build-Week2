@@ -261,6 +261,7 @@ main {
   position: relative;
   height: 120px;
   background-color: $black-spoty;
+
   #range-player,
   #volume {
     accent-color: $withe-trasparent;
@@ -435,4 +436,16 @@ li {
   #freccia-mobile {
     display: none;
   }
+}
+@media screen and (max-width: 676px) {
+  #media-player {
+    bottom: 70px;
+  }
+}
+.mobile-navbar {
+  right: 0;
+  left: 0;
+  bottom: -70px;
+  height: 70px;
+  align-items: center;
 }
