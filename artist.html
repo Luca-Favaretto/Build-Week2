@@ -267,33 +267,65 @@
           <div class="container">
             <main class="p-3">
               <section
-                class="d-flex mt-4 album-main-top align-items-center gap-5"
+                class="d-flex justify-content-between align-items-center"
               >
-                <button type="button" id="album-play" class="fs-3 play-btn">
-                  <i class="fas fa-play"></i>
-                </button>
-                <button type="button" id="album-heart">
-                  <i class="far fa-heart withe-trasparent fs-1"></i>
-                </button>
-                <div class="dropdown me-auto">
+                <div
+                  class="d-flex mt-0 align-items-center gap-3 album-main-top"
+                >
                   <button
-                    class="btn btn-dark dropdown-toggle bg-transparent border-0 withe-trasparent fs-3"
                     type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    id="album-tree-point"
+                    class="z-0 button-play d-none d-md-block album-play"
                   >
-                    <i class="fas fa-ellipsis-h"></i>
+                    <i class="fas fa-play"></i>
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
+
+                  <button type="button" id="album-heart" class="z-0">
+                    <i class="far fa-heart fs-1 withe-trasparent"></i></button
+                  ><button class="bg-tranparent z-1 fs-1">
+                    <i
+                      class="withe-trasparent far fa-arrow-alt-circle-down"
+                    ></i>
+                  </button>
+                  <div class="dropdown me-auto">
+                    <button
+                      class="btn btn-darkbg-transparent border-0"
+                      type="button"
+                      aria-expanded="false"
+                      id="album-tree-point"
+                    >
+                      <i
+                        class="fas fa-ellipsis-h d-none d-md-block fs-2 withe-trasparent"
+                      ></i>
+                      <i
+                        class="fas fa-ellipsis-v d-block d-md-none fs-2 withe-trasparent"
+                      ></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="album-main-top align-items-center d-flex">
+                  <button
+                    type="button"
+                    class="z-0 button-play d-block d-md-none bg-transparent withe-trasparent fs-3 me-3"
+                  >
+                    <i class="fas fa-random"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="z-0 button-play d-block d-md-none album-play"
+                  >
+                    <i class="fas fa-play"></i>
+                  </button>
                 </div>
               </section>
               <section class="mt-3">
